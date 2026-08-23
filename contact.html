@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Wonka Chocolate Factory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contactez la chocolaterie Wonka : formulaire de contact, adresse fictive, téléphone et horaires du service Oompa Loompa. Réponse garantie sous 48 heures (ou 72).">
+<link rel="canonical" href="https://www.wonka-chocolaterie.fr/contact.html">
+<meta property="og:title" content="Contact | Wonka Chocolate Factory">
+<meta property="og:description" content="Écrivez-nous ! Un Oompa Loompa sifflera votre réponse.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wonka-chocolaterie.fr/contact.html">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Comic Sans MS", "Trebuchet MS", Verdana, sans-serif;
+  color: #4a1060;
+  background-color: #fdf0ff;
+  background-image:
+    radial-gradient(rgba(255, 105, 238, 0.22) 12%, transparent 13%),
+    radial-gradient(rgba(255, 210, 63, 0.25) 12%, transparent 13%);
+  background-size: 90px 90px, 150px 150px;
+  background-position: 0 0, 45px 45px;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #5b1670 0%, #5c33a3 55%, #d24fd0 100%);
+  border-bottom: 8px double #ffd700;
+  padding: 24px 16px 18px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(60, 5, 80, 0.45);
+}
+
+.logo-img {
+  width: 320px;
+  max-width: 85%;
+  height: auto;
+  filter: drop-shadow(0 5px 0 rgba(30, 8, 60, 0.45));
+}
+
+.slogan { margin-top: 6px; color: #ffeaff; font-style: italic; font-size: 17px; }
+
+.main-nav { margin-top: 14px; }
+
+.main-nav a {
+  display: inline-block;
+  margin: 4px 5px;
+  padding: 8px 16px;
+  background: #ffffff;
+  color: #5c33a3;
+  font-weight: bold;
+  font-size: 15px;
+  border: 3px solid #5c33a3;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #3d2170;
+}
+
+.main-nav a:hover { transform: translateY(-2px); background: #efe7ff; }
+
+.main-nav a.active {
+  background: #5c33a3;
+  color: #ffffff;
+  box-shadow: 0 4px 0 #3d2170;
+}
+
+.page-title {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 42px;
+  color: #5c33a3;
+  text-shadow: 2px 2px 0 #ffd700, 4px 4px 0 rgba(142, 31, 158, 0.25);
+  margin: 36px 0 8px;
+}
+
+.page-intro { text-align: center; max-width: 700px; margin: 0 auto 26px; font-style: italic; color: #7a2288; }
+
+.contact-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 18px;
+  align-items: flex-start;
+}
+
+.form-box {
+  flex: 1 1 420px;
+  background: #fffdf5;
+  border: 5px solid #5c33a3;
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: 8px 8px 0 #ffb8ec;
+}
+
+.form-box label {
+  display: block;
+  font-weight: bold;
+  margin: 14px 0 6px;
+  color: #5b1670;
+}
+
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box select,
+.form-box textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 3px solid #ff77c8;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  background: #ffffff;
+  color: #4a1060;
+}
+
+.form-box input:focus, .form-box textarea:focus, .form-box select:focus {
+  outline: none;
+  border-color: #5c33a3;
+  box-shadow: 0 0 0 4px rgba(255, 119, 200, 0.35);
+}
+
+.btn-envoyer {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: linear-gradient(#ffe259, #ffa751);
+  color: #4a1060;
+  font-size: 18px;
+  font-weight: bold;
+  border: 4px solid #ffffff;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #b8860b;
+  font-family: inherit;
+}
+
+#message-confirmation {
+  display: none;
+  margin-top: 18px;
+  padding: 14px;
+  background: #e8fbe8;
+  border: 3px dashed #27ae60;
+  border-radius: 14px;
+  font-weight: bold;
+  color: #1e7e50;
+}
+
+.info-box {
+  flex: 1 1 320px;
+  background: repeating-linear-gradient(45deg, #fffbe6, #fffbe6 14px, #fff3b8 14px, #fff3b8 28px);
+  border: 5px dashed #ffb400;
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: 6px 6px 0 rgba(255, 180, 0, 0.35);
+}
+
+.info-box h2 { font-family: Georgia, serif; color: #5c33a3; font-size: 24px; margin-bottom: 10px; }
+.info-box p { margin-bottom: 10px; font-size: 15px; }
+.info-box a { color: #5c33a3; font-weight: bold; }
+
+.carte-factice {
+  height: 160px;
+  margin-top: 16px;
+  border: 4px solid #27ae60;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 70% 40%, rgba(39,174,96,.25) 0 60px, transparent 61px),
+    repeating-linear-gradient(0deg, #dff7e7, #dff7e7 20px, #cdeedd 20px, #cdeedd 40px),
+    repeating-linear-gradient(90deg, transparent 0 38px, rgba(255,255,255,.6) 38px 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+}
+
+.cta-band {
+  text-align: center;
+  margin: 46px auto 10px;
+  padding: 34px 18px;
+  background: linear-gradient(120deg, #ff77c8, #ffb400, #27ae60, #5b1670);
+  border-top: 6px solid #ffd700;
+  border-bottom: 6px solid #ffd700;
+}
+
+.cta-band p { color: #ffffff; font-size: 22px; font-weight: bold; text-shadow: 2px 2px 0 rgba(0,0,0,.4); margin-bottom: 16px; }
+
+.btn-wonka {
+  display: inline-block;
+  padding: 16px 34px;
+  background: #5c33a3;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  border: 4px solid #ffffff;
+  border-radius: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 0 3px #5c33a3, 0 8px 0 #3d2170, 0 14px 26px rgba(60, 20, 110, 0.45);
+  font-family: inherit;
+}
+
+.site-footer {
+  margin-top: 50px;
+  background: linear-gradient(160deg, #3d0a56, #6b1f8f);
+  color: #ffe9ff;
+  border-top: 8px double #ffd700;
+  padding: 34px 20px 20px;
+  text-align: center;
+}
+
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto 22px;
+  text-align: left;
+}
+
+.footer-cols h3 { color: #ffd700; margin-bottom: 8px; font-size: 19px; }
+.footer-cols a { color: #ffb8ec; }
+.copyright { border-top: 2px dashed rgba(255,215,0,.5); padding-top: 14px; font-size: 14px; }
+.absurd { margin-top: 6px; font-size: 13px; font-style: italic; color: #d8a8ef; }
+
+@media (max-width: 700px) {
+  .logo-img { width: 220px; }
+  .page-title { font-size: 30px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img class="logo-img" src="logo-wonka.png" alt="Wonka Chocolate Factory" width="320">
+  <p class="slogan">✦ Des bonbons magiques depuis 1964 ✦</p>
+  <nav class="main-nav">
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Nos chocolats</a>
+    <a href="confiseries-experimentales.html">Confiseries expérimentales</a>
+    <a href="visite-usine.html">Visiter l&rsquo;usine</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<h1 class="page-title">✉️ Contactez-nous ✉️</h1>
+<p class="page-intro">Une question, une réclamation, une déclaration d'amour au chocolat&nbsp;? Notre service Oompa Loompa vous répond sous 48 heures (ou 72, selon l'humeur des écureuils).</p>
+
+<div class="contact-layout">
+
+  <form class="form-box" onsubmit="envoyerMessage(); return false;">
+    <h2 style="font-family:Georgia,serif; color:#5c33a3;">Formulaire de contact magique</h2>
+
+    <label for="nom">Votre nom complet</label>
+    <input type="text" id="nom" placeholder="Exemple : Charlie Bucket">
+
+    <label for="email">Votre adresse e-mail</label>
+    <input type="email" id="email" placeholder="exemple@fiole.fr">
+
+    <label for="sujet">Sujet</label>
+    <select id="sujet">
+      <option>Question sur une commande</option>
+      <option>Réservation de visite</option>
+      <option>Bonbon qui change de couleur</option>
+      <option>Candidature concours de sifflet</option>
+      <option>Déclaration d'amour au chocolat</option>
+      <option>Autre</option>
+    </select>
+
+    <label for="message">Votre message</label>
+    <textarea id="message" rows="6" placeholder="Écrivez ici... les lettres manuscrites au beurre de cacao sont aussi acceptées."></textarea>
+
+    <button type="submit" class="btn-envoyer">Envoyer par pigeon sucré 🕊️</button>
+
+    <div id="message-confirmation"></div>
+  </form>
+
+  <div class="info-box">
+    <h2>🏭 Coordonnées de l'usine</h2>
+    <p><strong>Adresse&nbsp;:</strong><br>1 rue des Rêves Sucrés<br>Zone Fantastique Nord<br>99999 Chocolat-sur-Mer</p>
+    <p><strong>Téléphone&nbsp;:</strong> 09 72 55 01 96<br>(poste 1964 pour Willy, ne jamais demander)</p>
+    <p><strong>E-mail&nbsp;:</strong> bonjour@wonka-chocolaterie.fr</p>
+    <p><strong>Horaires du standard&nbsp;:</strong><br>Lundi – Vendredi&nbsp;: 9h – 18h<br>Samedi&nbsp;: 10h – 17h</p>
+    <p>Pour les questions fréquentes, consultez notre <a href="faq.html">FAQ</a>.</p>
+    <div class="carte-factice">🗺️🍫🗺️</div>
+  </div>
+
+</div>
+
+<div class="cta-band">
+  <p>⭐ Le courrier des lecteurs est trié par des écureuils ⭐</p>
+  <a class="btn-wonka" href="visite-usine.html">Réserver une visite</a>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-cols">
+    <div>
+      <h3>La Chocolaterie Wonka</h3>
+      <p>1 rue des Rêves Sucrés<br>Zone Fantastique Nord<br>99999 Chocolat-sur-Mer<br>Tél&nbsp;: 09 72 55 01 96</p>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <p>Lundi – Vendredi&nbsp;: 9h – 18h<br>Samedi&nbsp;: 10h – 17h<br>Dimanche&nbsp;: fermé<br>(les Oompa Loompas se reposent)</p>
+    </div>
+    <div>
+      <h3>Liens utiles</h3>
+      <a href="faq.html">FAQ</a><br>
+      <a href="contact.html">Contact</a><br>
+      <a href="mentions-legales.html">Mentions légales</a><br>
+      <a href="histoire.html">Notre histoire</a>
+    </div>
+  </div>
+  <p class="copyright">© 1964–2026 Chocolaterie Wonka. Tous droits réservés, même les droits de sucre.</p>
+  <p class="absurd">Les bonbons ne remplacent pas un repas équilibré, mais ils remplacent le lundi.</p>
+</footer>
+
+<script>
+function envoyerMessage() {
+  var nom = document.getElementById("nom").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var zone = document.getElementById("message-confirmation");
+
+  if (nom === "" || email === "" || message === "") {
+    zone.style.display = "block";
+    zone.style.background = "#ffe3e3";
+    zone.style.border = "3px dashed #c0392b";
+    zone.style.color = "#922b21";
+    zone.textContent = "Oups ! Il manque du chocolat... euh, des champs obligatoires.";
+    return;
+  }
+
+  var reponses = [
+    "Votre message a été confié à un écureuil cargo. Il arrive bientôt !",
+    "Message reçu 5 sur 5 ! Un Oompa Loompa siffle déjà votre réponse.",
+    "Merci " + nom + " ! Willy a lu votre message en mangeant du fudge."
+  ];
+
+  var i = Math.floor(Math.random() * reponses.length);
+  zone.style.display = "block";
+  zone.style.background = "#e8fbe8";
+  zone.style.border = "3px dashed #27ae60";
+  zone.style.color = "#1e7e50";
+  zone.textContent = reponses[i];
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visiter l'usine Wonka | Wonka Chocolate Factory</title>
+<meta name="description" content="Visites guidées de la chocolaterie Wonka : rivières de chocolat, salle des inventions, écureuils trieurs. Réservez votre place par téléphone ou formulaire.">
+<link rel="canonical" href="https://www.wonka-chocolaterie.fr/visite-usine.html">
+<meta property="og:title" content="Visiter l'usine Wonka">
+<meta property="og:description" content="Rivières de chocolat, écureuils trieurs et salle des inventaires : la visite dont vous rêvez.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wonka-chocolaterie.fr/visite-usine.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Peut-on visiter l'usine sans réservation ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, lors des Journées Portes Entrouvertes, le dernier mardi de chaque mois pair. Le nombre de places est limité à 12 visiteurs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Peut-on visiter l'usine avec des enfants ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bien sûr, à partir de 6 ans. Les enfants de moins de 6 ans doivent rester à hauteur des rivières de chocolat, sous surveillance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment réserver une visite ?", "acceptedAnswer": { "@type": "Answer", "text": "Par téléphone au 09 72 55 01 96 ou via le formulaire de contact. Réservation deux mois à l'avance pour les groupes." }
+      }
+    }
+  ]
+}
+</script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Comic Sans MS", "Trebuchet MS", Verdana, sans-serif;
+  color: #4a1060;
+  background-color: #fdf0ff;
+  background-image:
+    radial-gradient(rgba(39, 174, 96, 0.14) 12%, transparent 13%),
+    radial-gradient(rgba(255, 210, 63, 0.22) 12%, transparent 13%);
+  background-size: 110px 110px, 160px 160px;
+  background-position: 0 0, 55px 55px;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #5b1670 0%, #5c33a3 55%, #d24fd0 100%);
+  border-bottom: 8px double #ffd700;
+  padding: 24px 16px 18px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(60, 5, 80, 0.45);
+}
+
+.logo-img {
+  width: 320px;
+  max-width: 85%;
+  height: auto;
+  filter: drop-shadow(0 5px 0 rgba(30, 8, 60, 0.45));
+}
+
+.slogan { margin-top: 6px; color: #ffeaff; font-style: italic; font-size: 17px; }
+
+.main-nav { margin-top: 14px; }
+
+.main-nav a {
+  display: inline-block;
+  margin: 4px 5px;
+  padding: 8px 16px;
+  background: #ffffff;
+  color: #5c33a3;
+  font-weight: bold;
+  font-size: 15px;
+  border: 3px solid #5c33a3;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #3d2170;
+}
+
+.main-nav a:hover { transform: translateY(-2px); background: #efe7ff; }
+
+.main-nav a.active {
+  background: #5c33a3;
+  color: #ffffff;
+  box-shadow: 0 4px 0 #3d2170;
+}
+
+.page-title {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 42px;
+  color: #1e7e50;
+  text-shadow: 2px 2px 0 #ffd700, 4px 4px 0 rgba(30, 126, 80, 0.3);
+  margin: 36px 0 8px;
+}
+
+.page-intro { text-align: center; max-width: 720px; margin: 0 auto 24px; font-style: italic; color: #7a2288; }
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 18px; }
+
+.etapes { margin: 26px 0; }
+
+.etape {
+  display: flex;
+  gap: 18px;
+  background: #ffffff;
+  border: 4px solid #27ae60;
+  border-radius: 20px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 6px 6px 0 #c9f2dc;
+  align-items: center;
+}
+
+.etape .numero {
+  flex: 0 0 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(#ffe259, #ffa751);
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 0 #b8860b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #5b1670;
+}
+
+.etape h3 { color: #1e7e50; margin-bottom: 4px; font-size: 20px; }
+.etape p { font-size: 15px; }
+
+table.horaires {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fffdf5;
+  border: 5px solid #5c33a3;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 20px 0;
+  box-shadow: 6px 6px 0 #ffb8ec;
+}
+
+table.horaires th {
+  background: #5c33a3;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 16px;
+}
+
+table.horaires td { padding: 12px; border-bottom: 2px dashed #e5c7ee; font-size: 15px; text-align: center; }
+
+.ticket-box {
+  background: repeating-linear-gradient(45deg, #fff8dc, #fff8dc 16px, #fff0b3 16px, #fff0b3 32px);
+  border: 6px double #b8860b;
+  border-radius: 24px;
+  padding: 26px;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.ticket-box h2 { font-family: Georgia, serif; color: #5c33a3; font-size: 28px; margin-bottom: 10px; }
+.ticket-box p { margin-bottom: 14px; font-size: 16px; }
+
+#zone-places {
+  display: none;
+  margin-top: 16px;
+  padding: 12px;
+  background: #e8fbe8;
+  border: 3px dashed #27ae60;
+  border-radius: 14px;
+  font-weight: bold;
+  color: #1e7e50;
+}
+
+.btn-wonka {
+  display: inline-block;
+  padding: 16px 34px;
+  background: #5c33a3;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  border: 4px solid #ffffff;
+  border-radius: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 0 3px #5c33a3, 0 8px 0 #3d2170, 0 14px 26px rgba(60, 20, 110, 0.45);
+  font-family: inherit;
+}
+
+.btn-pink {
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(#ff77c8, #e0349c);
+  color: #ffffff;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 5px 0 #9c1668;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.faq-mini { max-width: 800px; margin: 40px auto; padding: 0 18px; }
+
+.faq-item {
+  background: #fffdf5;
+  border: 4px solid #ff77c8;
+  border-radius: 18px;
+  margin: 14px auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 #c9f2dc;
+}
+
+.faq-q {
+  width: 100%;
+  text-align: left;
+  background: #ffe3f4;
+  border: none;
+  padding: 14px 18px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #5c33a3;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.faq-a { display: none; padding: 14px 18px; background: #fffef9; }
+.faq-a a { color: #5c33a3; font-weight: bold; }
+.faq-item.open .faq-a { display: block; }
+.faq-item.open { border-color: #5c33a3; }
+
+.site-footer {
+  margin-top: 50px;
+  background: linear-gradient(160deg, #3d0a56, #6b1f8f);
+  color: #ffe9ff;
+  border-top: 8px double #ffd700;
+  padding: 34px 20px 20px;
+  text-align: center;
+}
+
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto 22px;
+  text-align: left;
+}
+
+.footer-cols h3 { color: #ffd700; margin-bottom: 8px; font-size: 19px; }
+.footer-cols a { color: #ffb8ec; }
+.copyright { border-top: 2px dashed rgba(255,215,0,.5); padding-top: 14px; font-size: 14px; }
+.absurd { margin-top: 6px; font-size: 13px; font-style: italic; color: #d8a8ef; }
+
+@media (max-width: 700px) {
+  .logo-img { width: 220px; }
+  .page-title { font-size: 30px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img class="logo-img" src="logo-wonka.png" alt="Wonka Chocolate Factory" width="320">
+  <p class="slogan">✦ Des bonbons magiques depuis 1964 ✦</p>
+  <nav class="main-nav">
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Nos chocolats</a>
+    <a href="confiseries-experimentales.html">Confiseries expérimentales</a>
+    <a href="visite-usine.html" class="active">Visiter l&rsquo;usine</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<h1 class="page-title">🏭 Visitez la chocolaterie 🏭</h1>
+<p class="page-intro">Une visite de deux heures au cœur de la fabrique la plus secrète du monde. Photos interdites, souvenirs obligatoires.</p>
+
+<div class="container">
+
+  <div class="etapes">
+    <div class="etape">
+      <div class="numero">1</div>
+      <div>
+        <h3>Le Hall des Portes Magiques</h3>
+        <p>Accueil par un Oompa Loompa bilingue (chanteur). Distribution des blouses comestibles.</p>
+      </div>
+    </div>
+    <div class="etape">
+      <div class="numero">2</div>
+      <div>
+        <h3>La Rivière de Chocolat</h3>
+        <p>Traversée en bateau rose. Interdiction absolue de boire la rivière, même si elle vous fait de l'œil.</p>
+      </div>
+    </div>
+    <div class="etape">
+      <div class="numero">3</div>
+      <div>
+        <h3>La Salle des Inventions</h3>
+        <p>Démonstration du Gobstopper éternel et du chewing-gum repas (public non-violet uniquement).</p>
+      </div>
+    </div>
+    <div class="etape">
+      <div class="numero">4</div>
+      <div>
+        <h3>La Salle des Écureuils</h3>
+        <p>100 écureuils dressés trient les noix à la seconde près. Ne portez pas de noix sur vous.</p>
+      </div>
+    </div>
+    <div class="etape">
+      <div class="numero">5</div>
+      <div>
+        <h3>L'Ascenseur en Verre</h3>
+        <p>Il monte, il descend, il va aussi sur les côtés. Personne ne sait comment. Ne demandez pas.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 style="text-align:center; font-family:Georgia,serif; font-size:30px; color:#5c33a3; text-shadow:2px 2px 0 #ffd700;">Horaires des visites</h2>
+  <table class="horaires">
+    <tr><th>Jour</th><th>Séances</th><th>Remarques</th></tr>
+    <tr><td>Lundi – Vendredi</td><td>10h00 / 14h30</td><td>Groupes de 12 personnes maximum</td></tr>
+    <tr><td>Samedi</td><td>9h30 / 11h00 / 15h00</td><td>Affluence d'écureuils le matin</td></tr>
+    <tr><td>Dimanche</td><td>Fermé</td><td>Journée de repos des Oompa Loompas</td></tr>
+    <tr><td>Dernier mardi des mois pairs</td><td>Portes entrouvertes</td><td>Entrée libre, sans Golden Ticket</td></tr>
+  </table>
+
+  <div class="ticket-box">
+    <h2>🎟️ Réservation &amp; tarifs 🎟️</h2>
+    <p>Visite complète de 2 heures&nbsp;: <strong>12 €</strong> par adulte, <strong>7 €</strong> par enfant (6-12 ans), gratuit avant 6 ans. Groupes de 12 personnes maximum, réservation conseillée.</p>
+    <a class="btn-wonka" href="contact.html">Demander une visite</a>
+    <br><br>
+    <button class="btn-pink" onclick="verifierPlaces()">Vérifier les places disponibles</button>
+    <div id="zone-places"></div>
+  </div>
+
+  <div class="faq-mini">
+    <h2 style="text-align:center; font-family:Georgia,serif; font-size:30px; color:#5c33a3; text-shadow:2px 2px 0 #ffd700;">Questions sur la visite</h2>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="basculerFaq(this)">Peut-on visiter l'usine sans réservation&nbsp;?</button>
+      <div class="faq-a">
+        Oui, lors des Journées Portes Entrouvertes (dernier mardi des mois pairs). Places limitées à 12 visiteurs.
+        Plus de détails dans notre <a href="faq.html">FAQ</a>.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="basculerFaq(this)">Peut-on visiter l'usine avec des enfants&nbsp;?</button>
+      <div class="faq-a">
+        Bien sûr, à partir de 6 ans. Les enfants doivent être surveillés près de la rivière de chocolat.
+        Voir aussi la <a href="faq.html">FAQ</a>.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="basculerFaq(this)">Comment réserver une visite&nbsp;?</button>
+      <div class="faq-a">
+        Par téléphone au 09 72 55 01 96 ou via la page <a href="contact.html">Contact</a>. Groupes de plus de 12 personnes : réservation deux mois à l'avance.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-cols">
+    <div>
+      <h3>La Chocolaterie Wonka</h3>
+      <p>1 rue des Rêves Sucrés<br>Zone Fantastique Nord<br>99999 Chocolat-sur-Mer<br>Tél&nbsp;: 09 72 55 01 96</p>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <p>Lundi – Vendredi&nbsp;: 9h – 18h<br>Samedi&nbsp;: 10h – 17h<br>Dimanche&nbsp;: fermé<br>(les Oompa Loompas se reposent)</p>
+    </div>
+    <div>
+      <h3>Liens utiles</h3>
+      <a href="faq.html">FAQ</a><br>
+      <a href="contact.html">Contact</a><br>
+      <a href="mentions-legales.html">Mentions légales</a><br>
+      <a href="histoire.html">Notre histoire</a>
+    </div>
+  </div>
+  <p class="copyright">© 1964–2026 Chocolaterie Wonka. Tous droits réservés, même les droits de sucre.</p>
+  <p class="absurd">Les bonbons ne remplacent pas un repas équilibré, mais ils remplacent le lundi.</p>
+</footer>
+
+<script>
+function verifierPlaces() {
+  var places = Math.floor(Math.random() * 12) + 1;
+  var zone = document.getElementById("zone-places");
+  zone.style.display = "block";
+  if (places > 3) {
+    zone.textContent = "Il reste " + places + " places pour la prochaine visite. Les écureuils attendent.";
+    zone.style.background = "#e8fbe8";
+  } else if (places > 0) {
+    zone.textContent = "Attention : seulement " + places + " place(s) restante(s) !";
+    zone.style.background = "#fff0d6";
+  } else {
+    zone.textContent = "Complet ! Un Oompa Loompa a été envoyé pour vous consoler.";
+    zone.style.background = "#ffe3e3";
+  }
+}
+
+function basculerFaq(bouton) {
+  var item = bouton.parentElement;
+  if (item.className.indexOf("open") === -1) {
+    item.className = item.className + " open";
+  } else {
+    item.className = item.className.replace(" open", "");
+  }
+}
+</script>
+
+</body>
+</html>

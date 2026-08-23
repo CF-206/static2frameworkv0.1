@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280">
+  <title>Wonka Chocolate Factory</title>
+  <g fill="none" stroke="#5c33a3" stroke-width="14" stroke-linecap="round">
+    <path d="M78 120 C 30 96, 34 40, 92 38 C 140 36, 156 84, 122 102 C 98 114, 80 96, 94 80 C 104 68, 120 76, 114 88"/>
+    <path d="M682 120 C 730 96, 726 40, 668 38 C 620 36, 604 84, 638 102 C 662 114, 680 96, 666 80 C 656 68, 640 76, 646 88"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.9">
+    <path d="M78 120 C 30 96, 34 40, 92 38 C 140 36, 156 84, 122 102 C 98 114, 80 96, 94 80 C 104 68, 120 76, 114 88"/>
+    <path d="M682 120 C 730 96, 726 40, 668 38 C 620 36, 604 84, 638 102 C 662 114, 680 96, 666 80 C 656 68, 640 76, 646 88"/>
+  </g>
+  <text x="380" y="188" text-anchor="middle" font-family="'Brush Script MT','Segoe Script','Comic Sans MS',cursive" font-size="172" font-style="italic" font-weight="bold" fill="#ffffff" stroke="#5c33a3" stroke-width="18" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke">Wonka</text>
+  <text x="380" y="244" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="23" letter-spacing="12" fill="#ffffff" stroke="#5c33a3" stroke-width="5" stroke-linejoin="round" paint-order="stroke">CHOCOLATE FACTORY</text>
+</svg>

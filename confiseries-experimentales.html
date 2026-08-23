@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Confiseries expérimentales | Wonka Chocolate Factory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Découvrez les confiseries expérimentales Wonka : boissons pétillantes volantes, chewing-gums repas, papier peint comestible et chocolat invisible. À consommer avec prudence.">
+<link rel="canonical" href="https://www.wonka-chocolaterie.fr/confiseries-experimentales.html">
+<meta property="og:title" content="Confiseries expérimentales | Wonka">
+<meta property="og:description" content="Boissons volantes, chewing-gums repas et chocolat invisible. La science du sucre à son sommet.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.wonka-chocolaterie.fr/confiseries-experimentales.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Les produits expérimentaux sont-ils garantis ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ils sont garantis sous réserve de physique. Si un produit enfreint une loi de la nature, celle-ci prime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Que faire si un bonbon change de couleur ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ne paniquez pas : c'est souvent prévu. Photographiez le bonbon puis contactez le service client avec la photo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Les boissons Fizzy Lifting sont-elles dangereuses ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Elles font flotter. Il faut roter pour redescendre. Consultez la fiche produit avant toute envolée."
+      }
+    }
+  ]
+}
+</script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Comic Sans MS", "Trebuchet MS", Verdana, sans-serif;
+  color: #4a1060;
+  background-color: #fdf6ec;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255, 119, 200, 0.12) 0 22px, transparent 22px 44px),
+    repeating-linear-gradient(-45deg, rgba(39, 174, 96, 0.10) 0 30px, transparent 30px 60px);
+}
+
+.site-header {
+  background: linear-gradient(135deg, #5b1670 0%, #5c33a3 55%, #d24fd0 100%);
+  border-bottom: 8px double #ffd700;
+  padding: 24px 16px 18px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(60, 5, 80, 0.45);
+}
+
+.logo-img {
+  width: 320px;
+  max-width: 85%;
+  height: auto;
+  filter: drop-shadow(0 5px 0 rgba(30, 8, 60, 0.45));
+}
+
+.slogan { margin-top: 6px; color: #ffeaff; font-style: italic; font-size: 17px; }
+
+.main-nav { margin-top: 14px; }
+
+.main-nav a {
+  display: inline-block;
+  margin: 4px 5px;
+  padding: 8px 16px;
+  background: #ffffff;
+  color: #5c33a3;
+  font-weight: bold;
+  font-size: 15px;
+  border: 3px solid #5c33a3;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #3d2170;
+}
+
+.main-nav a:hover { transform: translateY(-2px); background: #efe7ff; }
+
+.main-nav a.active {
+  background: #5c33a3;
+  color: #ffffff;
+  box-shadow: 0 4px 0 #3d2170;
+}
+
+.page-title {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 40px;
+  color: #c0392b;
+  text-shadow: 2px 2px 0 #ffd700, 4px 4px 0 rgba(192, 57, 43, 0.25);
+  margin: 36px 0 8px;
+}
+
+.page-intro { text-align: center; max-width: 720px; margin: 0 auto 20px; font-style: italic; color: #7a2288; }
+
+.bandeau-warning {
+  max-width: 780px;
+  margin: 20px auto;
+  background: repeating-linear-gradient(45deg, #fff3cd, #fff3cd 14px, #ffe08a 14px, #ffe08a 28px);
+  border: 5px dashed #e67e22;
+  border-radius: 18px;
+  padding: 18px 22px;
+  text-align: center;
+  color: #7d5a00;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 0 18px;
+}
+
+.card {
+  width: 270px;
+  background: #fffdf5;
+  border: 5px solid #e67e22;
+  border-radius: 24px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 8px 8px 0 #ffe08a;
+  position: relative;
+}
+
+.card:hover { transform: rotate(1deg) scale(1.02); transition: all 0.2s; }
+
+.badge {
+  position: absolute;
+  top: -14px;
+  right: -10px;
+  background: #ff2e63;
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 3px solid #ffffff;
+  transform: rotate(8deg);
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card .visuel { font-size: 58px; margin: 8px 0; }
+.card h3 { font-size: 20px; color: #5b1670; margin-bottom: 6px; }
+.card p { font-size: 14px; margin-bottom: 10px; min-height: 58px; }
+.prix { font-size: 25px; color: #c2185b; font-weight: bold; display: block; margin-bottom: 12px; }
+
+.btn-pink {
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(#ff77c8, #e0349c);
+  color: #ffffff;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 5px 0 #9c1668;
+  font-size: 15px;
+}
+
+.btn-pink:hover { transform: translateY(-2px); }
+
+.btn-orange {
+  display: inline-block;
+  padding: 10px 22px;
+  background: linear-gradient(#ffb84d, #e67e22);
+  color: #ffffff;
+  font-weight: bold;
+  border: 3px solid #ffffff;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #a05200;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.faq-mini { max-width: 800px; margin: 40px auto; padding: 0 18px; }
+
+.faq-item {
+  background: #fffdf5;
+  border: 4px solid #ff77c8;
+  border-radius: 18px;
+  margin: 14px auto;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 #ffe08a;
+}
+
+.faq-q {
+  width: 100%;
+  text-align: left;
+  background: #ffe3f4;
+  border: none;
+  padding: 14px 18px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #5c33a3;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.faq-a { display: none; padding: 14px 18px; background: #fffef9; }
+.faq-a a { color: #5c33a3; font-weight: bold; }
+.faq-item.open .faq-a { display: block; }
+.faq-item.open { border-color: #5c33a3; }
+
+.cta-band {
+  text-align: center;
+  margin: 46px auto 10px;
+  padding: 34px 18px;
+  background: linear-gradient(120deg, #ff77c8, #ffb400, #27ae60, #5b1670);
+  border-top: 6px solid #ffd700;
+  border-bottom: 6px solid #ffd700;
+}
+
+.cta-band p { color: #ffffff; font-size: 22px; font-weight: bold; text-shadow: 2px 2px 0 rgba(0,0,0,.4); margin-bottom: 16px; }
+
+.btn-wonka {
+  display: inline-block;
+  padding: 16px 34px;
+  background: #5c33a3;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  border: 4px solid #ffffff;
+  border-radius: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0 0 3px #5c33a3, 0 8px 0 #3d2170, 0 14px 26px rgba(60, 20, 110, 0.45);
+  font-family: inherit;
+}
+
+.site-footer {
+  margin-top: 50px;
+  background: linear-gradient(160deg, #3d0a56, #6b1f8f);
+  color: #ffe9ff;
+  border-top: 8px double #ffd700;
+  padding: 34px 20px 20px;
+  text-align: center;
+}
+
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto 22px;
+  text-align: left;
+}
+
+.footer-cols h3 { color: #ffd700; margin-bottom: 8px; font-size: 19px; }
+.footer-cols a { color: #ffb8ec; }
+.copyright { border-top: 2px dashed rgba(255,215,0,.5); padding-top: 14px; font-size: 14px; }
+.absurd { margin-top: 6px; font-size: 13px; font-style: italic; color: #d8a8ef; }
+
+@media (max-width: 700px) {
+  .logo-img { width: 220px; }
+  .page-title { font-size: 30px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <img class="logo-img" src="logo-wonka.png" alt="Wonka Chocolate Factory" width="320">
+  <p class="slogan">✦ Des bonbons magiques depuis 1964 ✦</p>
+  <nav class="main-nav">
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Nos chocolats</a>
+    <a href="confiseries-experimentales.html" class="active">Confiseries expérimentales</a>
+    <a href="visite-usine.html">Visiter l&rsquo;usine</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<h1 class="page-title">⚗️ Confiseries expérimentales ⚗️</h1>
+<p class="page-intro">Bienvenue dans l'aile interdite de la chocolaterie. Ici, nos chimistes du sucre testent des bonbons qui ne devraient pas exister.</p>
+
+<div class="bandeau-warning">
+  ⚠️ ATTENTION&nbsp;: ces produits peuvent flotter, changer de goût, devenir invisibles ou provoquer des hoquets musicaux.
+  Consommation sous la responsabilité d'un adulte imaginaire.
+</div>
+
+<div class="cards">
+
+  <div class="card">
+    <span class="badge">Rupture expérimentale</span>
+    <div class="visuel">🥤</div>
+    <h3>Fizzy Lifting Drink</h3>
+    <p>Une boisson gazeuse qui vous soulève du sol. Effets secondaires : euphorie et plafond sale.</p>
+    <span class="prix">12,50 €</span><br>
+    <a class="btn-pink" href="fizzy-lifting-drink.html">Voir la fiche</a>
+  </div>
+
+  <div class="card">
+    <span class="badge">Édition limitée</span>
+    <div class="visuel">🍬</div>
+    <h3>Three Course Dinner Gum</h3>
+    <p>Trois services en un chewing-gum. Le dessert myrtille est encore instable (voir cas Violet).</p>
+    <span class="prix">8,99 €</span><br>
+    <a class="btn-pink" href="three-course-dinner-gum.html">Voir la fiche</a>
+  </div>
+
+  <div class="card">
+    <span class="badge">Sur commande</span>
+    <div class="visuel">🖼️</div>
+    <h3>Lickable Wallpaper</h3>
+    <p>Du papier peint fruité à lécher. Ne pas lécher les murs porteurs plus de trois fois par jour.</p>
+    <span class="prix">59,00 €</span><br>
+    <a class="btn-pink" href="lickable-wallpaper.html">Voir la fiche</a>
+  </div>
+
+  <div class="card">
+    <span class="badge">Introuvable</span>
+    <div class="visuel">👻</div>
+    <h3>Invisible Chocolate</h3>
+    <p>Notre plus grande réussite&nbsp;: personne n'a jamais vu ce chocolat, mais tout le monde en parle.</p>
+    <span class="prix">24,90 €</span><br>
+    <a class="btn-pink" href="invisible-chocolate.html">Voir la fiche</a>
+  </div>
+
+</div>
+
+<div style="text-align:center; margin: 30px 0;">
+  <button class="btn-orange" onclick="niveauDanger()">Évaluer mon niveau de danger 🎲</button>
+  <p id="zone-danger" style="display:none; margin-top:14px; font-weight:bold; font-size:18px;"></p>
+</div>
+
+<div class="faq-mini">
+  <h2 style="text-align:center; font-family:Georgia,serif; font-size:30px; color:#5c33a3; text-shadow:2px 2px 0 #ffd700;">Questions fréquentes sur les expériences</h2>
+
+  <div class="faq-item">
+    <button class="faq-q" onclick="basculerFaq(this)">Les produits expérimentaux sont-ils garantis&nbsp;?</button>
+    <div class="faq-a">
+      Ils sont garantis sous réserve de physique. Si un produit enfreint une loi de la nature, c'est la loi de la nature qui gagne.
+      Consultez aussi notre <a href="faq.html">FAQ complète</a>.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" onclick="basculerFaq(this)">Les boissons Fizzy Lifting sont-elles dangereuses&nbsp;?</button>
+    <div class="faq-a">
+      Elles font flotter, ce qui n'est dangereux que si vous oubliez de roter. Lisez la
+      <a href="fizzy-lifting-drink.html">fiche Fizzy Lifting Drink</a> avant toute envolée.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-q" onclick="basculerFaq(this)">Que faire si un bonbon change de couleur&nbsp;?</button>
+    <div class="faq-a">
+      Restez calme, photographiez-le sous trois angles et contactez le <a href="contact.html">service client</a>. Ne le mangez pas pendant sa phase arc-en-ciel.
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <p>⭐ Les vrais aventuriers testent tout (sauf le dessert) ⭐</p>
+  <a class="btn-wonka" href="produits.html">Voir toute la gamme</a>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-cols">
+    <div>
+      <h3>La Chocolaterie Wonka</h3>
+      <p>1 rue des Rêves Sucrés<br>Zone Fantastique Nord<br>99999 Chocolat-sur-Mer<br>Tél&nbsp;: 09 72 55 01 96</p>
+    </div>
+    <div>
+      <h3>Horaires</h3>
+      <p>Lundi – Vendredi&nbsp;: 9h – 18h<br>Samedi&nbsp;: 10h – 17h<br>Dimanche&nbsp;: fermé<br>(les Oompa Loompas se reposent)</p>
+    </div>
+    <div>
+      <h3>Liens utiles</h3>
+      <a href="faq.html">FAQ</a><br>
+      <a href="contact.html">Contact</a><br>
+      <a href="mentions-legales.html">Mentions légales</a><br>
+      <a href="histoire.html">Notre histoire</a>
+    </div>
+  </div>
+  <p class="copyright">© 1964–2026 Chocolaterie Wonka. Tous droits réservés, même les droits de sucre.</p>
+  <p class="absurd">Les bonbons ne remplacent pas un repas équilibré, mais ils remplacent le lundi.</p>
+</footer>
+
+<script>
+var dangers = [
+  "Niveau 1 : légèrement pétillant. Vous pouvez y aller.",
+  "Niveau 2 : vos cheveux risquent de chanter.",
+  "Niveau 3 : prévoyez une corde. Et un parapluie.",
+  "Niveau 4 : prévenez votre voisinage. Et votre assurance.",
+  "Niveau 5 : Willy refuse de répondre aux questions sur ce niveau."
+];
+
+function niveauDanger() {
+  var zone = document.getElementById("zone-danger");
+  var i = Math.floor(Math.random() * dangers.length);
+  zone.textContent = dangers[i];
+  zone.style.display = "block";
+}
+
+function basculerFaq(bouton) {
+  var item = bouton.parentElement;
+  if (item.className.indexOf("open") === -1) {
+    item.className = item.className + " open";
+  } else {
+    item.className = item.className.replace(" open", "");
+  }
+}
+</script>
+
+</body>
+</html>

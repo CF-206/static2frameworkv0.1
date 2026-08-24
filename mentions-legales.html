@@ -2,266 +2,190 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Mentions légales | Wonka Chocolate Factory</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mentions légales de la Chocolaterie Wonka : éditeur, hébergement, propriété intellectuelle et clauses absurdes mais juridiquement délicieuses.">
-<meta name="description" content="Mentions légales de la Chocolaterie Wonka (version sucrée).">
-<link rel="canonical" href="https://www.wonka-chocolaterie.fr/mentions-legales.html">
-<meta property="og:title" content="Mentions légales | Wonka Chocolate Factory">
-<meta property="og:description" content="Le petit texte que personne ne lit, écrit avec amour et un peu de sirop.">
+<title>Mentions légales - Wonka Chocolate Factory</title>
+<meta name="description" content="Mentions légales, éditeur du site, hébergement, propriété intellectuelle et conditions générales de dégustation de la chocolaterie Wonka.">
+<meta name="author" content="Direction juridique Wonka (une personne)">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.wonka-chocolate-factory.example/mentions-legales.html">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.wonka-chocolaterie.fr/mentions-legales.html">
+<meta property="og:title" content="Mentions légales - Wonka Chocolate Factory">
+<meta property="og:description" content="Informations légales de la chocolaterie. Page obligatoire, lue par personne.">
+<meta property="og:url" content="https://www.wonka-chocolate-factory.example/mentions-legales.html">
+<meta property="og:site_name" content="Wonka Chocolate Factory">
+<meta property="og:locale" content="fr_FR">
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: "Comic Sans MS", "Trebuchet MS", Verdana, sans-serif;
-  color: #4a1060;
-  background-color: #fdf0ff;
-  background-image:
-    radial-gradient(rgba(255, 105, 238, 0.22) 12%, transparent 13%),
-    radial-gradient(rgba(255, 210, 63, 0.25) 12%, transparent 13%);
-  background-size: 90px 90px, 150px 150px;
-  background-position: 0 0, 45px 45px;
-}
-
-.site-header {
-  background: linear-gradient(135deg, #5b1670 0%, #5c33a3 55%, #d24fd0 100%);
-  border-bottom: 8px double #ffd700;
-  padding: 24px 16px 18px;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(60, 5, 80, 0.45);
-}
-
-.logo-img {
-  width: 320px;
-  max-width: 85%;
-  height: auto;
-  filter: drop-shadow(0 5px 0 rgba(30, 8, 60, 0.45));
-}
-
-.slogan { margin-top: 6px; color: #ffeaff; font-style: italic; font-size: 17px; }
-
-.main-nav { margin-top: 14px; }
-
-.main-nav a {
-  display: inline-block;
-  margin: 4px 5px;
-  padding: 8px 16px;
-  background: #ffffff;
-  color: #5c33a3;
-  font-weight: bold;
-  font-size: 15px;
-  border: 3px solid #5c33a3;
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 4px 0 #3d2170;
-}
-
-.main-nav a:hover { transform: translateY(-2px); background: #efe7ff; }
-
-.page-title {
-  text-align: center;
-  font-family: Georgia, serif;
-  font-size: 42px;
-  color: #5c33a3;
-  text-shadow: 2px 2px 0 #ffd700, 4px 4px 0 rgba(142, 31, 158, 0.25);
-  margin: 36px 0 8px;
-}
-
-.page-intro { text-align: center; max-width: 700px; margin: 0 auto 26px; font-style: italic; color: #7a2288; }
-
-.container { max-width: 820px; margin: 0 auto; padding: 0 18px; }
-
-.bloc-legal {
-  background: #fffdf5;
-  border: 4px solid #5c33a3;
-  border-radius: 18px;
-  padding: 22px 26px;
-  margin-bottom: 24px;
-  box-shadow: 6px 6px 0 #ffd6ef;
-}
-
-.bloc-legal h2 {
-  font-family: Georgia, serif;
-  color: #c2185b;
-  font-size: 23px;
-  margin-bottom: 12px;
-}
-
-.bloc-legal p { font-size: 15px; line-height: 1.7; margin-bottom: 10px; }
-.bloc-legal a { color: #5c33a3; font-weight: bold; }
-.bloc-legal strong { color: #5b1670; }
-
-.clause-absurde {
-  background: repeating-linear-gradient(45deg, #fff3cd, #fff3cd 14px, #ffe08a 14px, #ffe08a 28px);
-  border: 5px dashed #e67e22 !important;
-  color: #7d5a00;
-}
-
-#annee-courante { font-weight: bold; }
-
-.cta-band {
-  text-align: center;
-  margin: 46px auto 10px;
-  padding: 34px 18px;
-  background: linear-gradient(120deg, #ff77c8, #ffb400, #27ae60, #5b1670);
-  border-top: 6px solid #ffd700;
-  border-bottom: 6px solid #ffd700;
-}
-
-.cta-band p { color: #ffffff; font-size: 22px; font-weight: bold; text-shadow: 2px 2px 0 rgba(0,0,0,.4); margin-bottom: 16px; }
-
-.btn-wonka {
-  display: inline-block;
-  padding: 16px 34px;
-  background: #5c33a3;
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: bold;
-  border: 4px solid #ffffff;
-  border-radius: 40px;
-  text-decoration: none;
-  cursor: pointer;
-  box-shadow: 0 0 0 3px #5c33a3, 0 8px 0 #3d2170, 0 14px 26px rgba(60, 20, 110, 0.45);
-  font-family: inherit;
-}
-
-.site-footer {
-  margin-top: 50px;
-  background: linear-gradient(160deg, #3d0a56, #6b1f8f);
-  color: #ffe9ff;
-  border-top: 8px double #ffd700;
-  padding: 34px 20px 20px;
-  text-align: center;
-}
-
-.footer-cols {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 34px;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto 22px;
-  text-align: left;
-}
-
-.footer-cols h3 { color: #ffd700; margin-bottom: 8px; font-size: 19px; }
-.footer-cols a { color: #ffb8ec; }
-.copyright { border-top: 2px dashed rgba(255,215,0,.5); padding-top: 14px; font-size: 14px; }
-.absurd { margin-top: 6px; font-size: 13px; font-style: italic; color: #d8a8ef; }
-
-@media (max-width: 700px) {
-  .logo-img { width: 220px; }
-  .page-title { font-size: 30px; }
-}
-</style>
+/* FEUILLE DE STYLE WONKA — copiée depuis index.html (variante "légale", sobre… enfin, presque) */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#3b1a2b;font-family:Verdana,"Trebuchet MS",Tahoma,sans-serif;font-size:15px;line-height:1.7;
+ background-color:#f1ecf6;
+ background-image:radial-gradient(#d9c7ea 2px,transparent 3px),repeating-linear-gradient(135deg,#efe7f7 0 24px,#f8f4fc 24px 48px);
+ background-size:52px 52px,auto;background-position:0 0,0 0;background-attachment:fixed}
+h1,h2,h3,h4,.logo,.btn,.badge{font-family:"Cooper Black","Bookman Old Style",Rockwell,Georgia,serif;font-weight:400;letter-spacing:.3px}
+a{color:#a3256b}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.topbar{overflow:hidden;background:#d7255c;color:#fff6e5;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.topbar .bande{display:inline-block;white-space:nowrap;padding:7px 0;animation:defile 32s linear infinite}
+@keyframes defile{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+header.site{background:linear-gradient(180deg,#4a1163,#31093f);border-bottom:3px solid #ffd166;padding:0;position:relative}
+header.site:before{content:"";display:block;height:6px;background:repeating-linear-gradient(90deg,#ff5d8f 0 26px,#ffd166 26px 52px,#41e0a3 52px 78px,#8ad7f2 78px 104px)}
+.logo{margin:0}
+.logo img{position:relative;z-index:5;display:block;width:auto;height:80px;margin-bottom:-36px}@media(max-width:1020px){.logo img{height:70px;margin-bottom:-30px}}@media(max-width:920px){.logo img{height:58px;margin-bottom:-24px}}header.site .wrap{max-width:1100px;display:flex;align-items:center;flex-wrap:wrap;gap:14px;min-height:66px}.menu-toggle{position:absolute;width:1px;height:1px;opacity:0}.burger{display:none;margin-left:auto;color:#ffd166;font-size:24px;line-height:1;cursor:pointer;padding:10px 2px;user-select:none}
+nav.main{display:flex;align-items:center;gap:4px;margin-left:auto}@media(max-width:920px){.burger{display:inline-flex}nav.main{display:none;flex-direction:column;align-items:stretch;gap:2px;width:100%;margin:0;padding:28px 0 14px}nav.main a{padding:12px 16px;border-radius:12px}.menu-toggle:checked~nav.main{display:flex}}
+nav.main a{color:#efe1fb;text-decoration:none;font-weight:bold;font-size:clamp(9.5px,.92vw,11.5px);text-transform:uppercase;letter-spacing:.4px;padding:.65em .95em;border-radius:999px;white-space:nowrap;transition:background .15s,color .15s}
+nav.main a:hover{background:rgba(255,209,102,.16);color:#ffd166}nav.main a[aria-current=page]{background:#1e0530;color:#fff6e5;box-shadow:inset 0 0 0 2px #8a35a8}.logo a{display:block;line-height:0}
+.btn{display:inline-block;text-decoration:none;border:4px solid #3a0f52;border-radius:14px;padding:12px 22px;font-size:16px;cursor:pointer;box-shadow:6px 6px 0 #3a0f52;background:#ffd166;color:#3a0f52;text-align:center;transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 #3a0f52}
+.btn + .btn{margin-left:16px}
+.btn-petit{font-size:13px;padding:8px 14px;box-shadow:4px 4px 0 #3a0f52;border-width:3px}
+section{padding:36px 0}
+.panel{background:#fff6e5;border:5px solid #3a0f52;border-radius:26px;box-shadow:10px 10px 0 #b07bd8;padding:26px;margin:0 0 26px}
+.panel.jaune{box-shadow:10px 10px 0 #ffd166}
+.titre{font-size:clamp(24px,4vw,38px);margin:0 0 8px;color:#3a0f52;text-shadow:3px 3px 0 #ffd166}
+.sous-titre{font-size:14px;margin:0 0 20px;color:#6b5580}
+hr.bonbon{border:0;height:8px;background:repeating-linear-gradient(90deg,#ff5d8f 0 16px,#ffd166 16px 32px,#41e0a3 32px 48px,#8ad7f2 48px 64px);border-radius:8px;margin:24px 0}
+.carac{width:100%;border-collapse:collapse;background:#fff;border:4px solid #3a0f52;border-radius:16px;overflow:hidden}
+.carac th,.carac td{border-bottom:2px dotted #c99;padding:9px 12px;text-align:left;font-size:14px;vertical-align:top}
+.carac th{background:#efe7f7;width:40%;font-family:Verdana,sans-serif;font-weight:bold;color:#3a0f52}
+footer.site{background:#3a0f52;color:#ffe8f0;border-top:7px solid #ffd166;padding:34px 16px 20px;margin-top:40px}
+footer.site .colonnes{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));max-width:1100px;margin:0 auto}
+footer.site h4{color:#ffd166;font-size:18px;margin:0 0 8px}
+footer.site a{color:#8ad7f2}
+footer.site .absurde{max-width:1100px;margin:22px auto 0;font-size:12px;font-style:italic;color:#d8b6ea;border-top:2px dotted #8a35a8;padding-top:12px}
+/* bandeau page — moderne & élégant */
+.bandeau-page{position:relative;overflow:hidden;background:linear-gradient(140deg,#5c1580 0%,#4b1063 46%,#2e0843 100%);border:5px solid #3a0f52;border-radius:26px;padding:48px 28px 42px;margin:30px 0;box-shadow:10px 10px 0 #ffd166;text-align:center}
+.bandeau-page:before{content:"";position:absolute;inset:12px;border:1px solid rgba(255,209,102,.35);border-radius:17px;pointer-events:none}
+.bandeau-page:after{content:"";position:absolute;inset:0;background:radial-gradient(420px 210px at 86% -14%,rgba(255,209,102,.22),transparent 65%),radial-gradient(440px 260px at 5% 114%,rgba(255,93,143,.2),transparent 65%),radial-gradient(340px 170px at 50% -12%,rgba(138,215,242,.13),transparent 65%);pointer-events:none}
+.bandeau-page h1{position:relative;z-index:1;font-family:"Cooper Black",Rockwell,Georgia,serif;font-weight:400;font-size:clamp(32px,6vw,58px);margin:0;letter-spacing:.5px;background:linear-gradient(180deg,#fff3cf,#ffd166 52%,#e8a63d);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;filter:drop-shadow(0 3px 0 rgba(31,5,49,.55))}
+.bandeau-page h1:after{content:"";display:block;width:min(190px,58%);height:4px;margin:16px auto 12px;border-radius:999px;background:linear-gradient(90deg,transparent,#ff5d8f 22%,#ffd166 50%,#41e0a3 78%,transparent)}
+.bandeau-page p{position:relative;z-index:1;color:#f2e4fb;margin:0 auto;max-width:62ch;letter-spacing:.25px}
+.fil{font-size:12px;text-transform:uppercase;letter-spacing:1px;margin:40px 0 0;color:#6b5580}
+.fil a{color:#3a0f52}
+.visuel{position:relative}.visuel .badge{position:absolute;top:4px;left:4px;z-index:1;font-size:10px;padding:2px 8px}</style>
 </head>
 <body>
 
-<header class="site-header">
-  <img class="logo-img" src="logo-wonka.png" alt="Wonka Chocolate Factory" width="320">
-  <p class="slogan">✦ Des bonbons magiques depuis 1964 ✦</p>
-  <nav class="main-nav">
-    <a href="index.html">Accueil</a>
-    <a href="produits.html">Nos chocolats</a>
-    <a href="confiseries-experimentales.html">Confiseries expérimentales</a>
-    <a href="visite-usine.html">Visiter l&rsquo;usine</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<div class="topbar"><span class="bande">★ Document légal ★ Version 12 ★ Modifiée pour la dernière fois par quelqu'un de très pressé ★</span></div>
 
-<h1 class="page-title">⚖️ Mentions légales ⚖️</h1>
-<p class="page-intro">Le petit texte que personne ne lit, écrit avec amour, du sucre et un peu de sirop de liège.</p>
-
-<div class="container">
-
-  <div class="bloc-legal">
-    <h2>1. Éditeur du site</h2>
-    <p>Le présent site est édité par <strong>Wonka Chocolate Factory SAS</strong>, société imaginaire au capital
-    de 10 000 fioles de rêves, immatriculée au Registre Fantastique du Commerce sous le numéro
-    <strong>1964-WKF-00001</strong>.</p>
-    <p>Siège social&nbsp;: 1 rue des Rêves Sucrés, 99999 Chocolat-sur-Mer.<br>
-    Directeur de la publication&nbsp;: Willy Wonka (en personne, il insiste).</p>
-  </div>
-
-  <div class="bloc-legal">
-    <h2>2. Hébergement</h2>
-    <p>Le site est hébergé dans la salle des serveurs de l'usine, à côté de la rivière de chocolat.
-    Les serveurs sont refroidis par des courants d'air produits par les ailes d'écureuils cargo.
-    En cas de panne, merci de patienter pendant qu'un Oompa Loompa redémarre la machine à l'aide d'un grand ressort.</p>
-  </div>
-
-  <div class="bloc-legal">
-    <h2>3. Propriété intellectuelle</h2>
-    <p>Tous les noms de produits (<a href="wonka-bar.html">Wonka Bar</a>,
-    <a href="everlasting-gobstopper.html">Everlasting Gobstopper</a>,
-    <a href="scrumdiddlyumptious-bar.html">Scrumdiddlyumptious Bar</a>, etc.), les recettes, les slogans,
-    les chansons d'Oompa Loompas ainsi que le mot « Scrumdidly » (et ses variantes) sont la propriété exclusive
-    de la chocolaterie.</p>
-    <p>Toute reproduction, même partielle, même invisible, même en rêve, est interdite sans autorisation écrite
-    de Willy Wonka.</p>
-  </div>
-
-  <div class="bloc-legal">
-    <h2>4. Données personnelles</h2>
-    <p>Les informations transmises via le <a href="contact.html">formulaire de contact</a> sont stockées dans
-    une boîte en fer-blanc conservée dans la salle forte. Elles ne sont jamais revendues, jamais partagées,
-    et parfois grignotées (nous travaillons sur ce point).</p>
-    <p>Conformément aux règles en vigueur, vous pouvez demander l'accès, la rectification ou la suppression
-    de vos données en sifflant trois fois dans votre téléphone.</p>
-  </div>
-
-  <div class="bloc-legal clause-absurde">
-    <h2>5. Clauses spéciales (à lire deux fois)</h2>
-    <p><strong>Article 5.1</strong> — La chocolaterie ne saurait être tenue responsable des vols de bonbons commis
-    par des enfants dans les rêves de nos visiteurs.</p>
-    <p><strong>Article 5.2</strong> — Tout visiteur acceptant ces mentions autorise officiellement les Oompa Loompas
-    à commenter sa tenue vestimentaire en chanson.</p>
-    <p><strong>Article 5.3</strong> — En cas de litige, le tribunal compétent est celui de la Salle 47, dont l'accès
-    est strictement interdit, y compris au tribunal.</p>
-    <p><strong>Article 5.4</strong> — Les échantillons offerts en fin de visite doivent être consommés avant la sortie de l'ascenseur, sous peine de confiscation par les écureuils.</p>
-  </div>
-
-  <div class="bloc-legal">
-    <h2>6. Crédits</h2>
-    <p>Site conçu, codé et maintenu par Bouboule, Oompa Loompa développeur web depuis <span id="annee-courante">1964</span>.
-    Aucun Gobstopper n'a été blessé pendant la réalisation de ce site.</p>
-  </div>
-
-</div>
-
-<div class="cta-band">
-  <p>⭐ Même les mentions légales ont un goût de chocolat ⭐</p>
-  <a class="btn-wonka" href="visite-usine.html">Réserver une visite</a>
-</div>
-
-<footer class="site-footer">
-  <div class="footer-cols">
-    <div>
-      <h3>La Chocolaterie Wonka</h3>
-      <p>1 rue des Rêves Sucrés<br>Zone Fantastique Nord<br>99999 Chocolat-sur-Mer<br>Tél&nbsp;: 09 72 55 01 96</p>
-    </div>
-    <div>
-      <h3>Horaires</h3>
-      <p>Lundi – Vendredi&nbsp;: 9h – 18h<br>Samedi&nbsp;: 10h – 17h<br>Dimanche&nbsp;: fermé<br>(les Oompa Loompas se reposent)</p>
-    </div>
-    <div>
-      <h3>Liens utiles</h3>
-      <a href="faq.html">FAQ</a><br>
-      <a href="contact.html">Contact</a><br>
-      <a href="mentions-legales.html">Mentions légales</a><br>
+<header class="site">
+  <div class="wrap">
+    <p class="logo"><a href="index.html" aria-label="Wonka Chocolate Factory - Accueil"><img src="logo-wonka.png" alt="Wonka Chocolate Factory" width="2000" height="1125"></a></p>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M4 6l16 0" />
+  <path d="M4 12l16 0" />
+  <path d="M4 18l16 0" />
+</svg></label>
+    <nav class="main">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="visite-usine.html">Visiter l'usine</a>
       <a href="histoire.html">Notre histoire</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<script>
+(function(){
+  var page = location.pathname.split('/').pop() || 'index.html';
+  var parents = { 'wonka-bar.html':'produits.html', 'everlasting-gobstopper.html':'produits.html', 'fizzy-lifting-drink.html':'produits.html', 'three-course-dinner-gum.html':'produits.html', 'lickable-wallpaper.html':'produits.html', 'golden-egg.html':'produits.html', 'scrumdiddlyumptious-bar.html':'produits.html', 'invisible-chocolate.html':'produits.html' };
+  var cible = parents[page] || page;
+  var liens = document.querySelectorAll('nav.main a');
+  for (var i = 0; i < liens.length; i++) {
+    if (liens[i].getAttribute('href') === cible) {
+      liens[i].setAttribute('aria-current', 'page');
+    }
+  }
+})();
+</script>
+
+<div class="wrap">
+  <p class="fil"><a href="index.html">Accueil</a> › Mentions légales</p>
+
+  <div class="bandeau-page">
+    <h1>Mentions légales</h1>
+    <p>Dernière mise à jour : un mardi. Probablement.</p>
+  </div>
+
+  <div class="panel">
+    <h2 class="titre">1. Éditeur du site</h2>
+    <table class="carac">
+      <tr><th>Raison sociale</th><td>Wonka Chocolate Factory SA (société à appétit)</td></tr>
+      <tr><th>Siège social</th><td>14 boulevard du Cacao Fou, 1971 Chocolatville-sur-Rivière</td></tr>
+      <tr><th>Capital</th><td>4 000 000 fèves de cacao, dont 300 000 en cours de torréfaction</td></tr>
+      <tr><th>Directeur de la publication</th><td>W. Wonka, fondateur et goûteur en chef</td></tr>
+      <tr><th>Téléphone</th><td>+33 1 WONKA 71</td></tr>
+      <tr><th>Courriel</th><td>bonjour@wonka-chocolate-factory.example</td></tr>
+    </table>
+  </div>
+
+  <div class="panel jaune">
+    <h2 class="titre">2. Hébergement</h2>
+    <p>Le site est hébergé sur un serveur situé quelque part sous la salle du chocolat, dans une pièce dont la température est maintenue à 18 °C par un système que nous préférons ne pas décrire. Aucune donnée personnelle n'est transmise, principalement parce qu'aucune donnée n'est collectée.</p>
+  </div>
+
+  <div class="panel">
+    <h2 class="titre">3. Propriété intellectuelle</h2>
+    <p>L'ensemble des textes, illustrations, chansons, odeurs et textures présentes sur ce site sont la propriété exclusive de la Wonka Chocolate Factory, à l'exception des recettes volées en 1978, qui appartiennent désormais à trois concurrents dont nous préférons taire les noms.</p>
+    <p>Toute reproduction est interdite, y compris la reproduction à l'identique d'un <a href="everlasting-gobstopper.html">Everlasting Gobstopper</a>, tentative qui a d'ailleurs échoué onze fois.</p>
+  </div>
+
+  <div class="panel">
+    <h2 class="titre">4. Données personnelles</h2>
+    <p>Ce site ne dépose aucun cookie, sauf les comestibles. Le formulaire de la page <a href="contact.html">Contact</a> n'envoie les données nulle part : il s'agit d'un site de démonstration, sans serveur ni base de données.</p>
+  </div>
+
+  <div class="panel">
+    <h2 class="titre">5. Conditions générales de dégustation</h2>
+    <p>5.1. Tout achat vaut acceptation du fait que le produit peut surprendre.<br>
+    5.2. La <a href="fizzy-lifting-drink.html">Fizzy Lifting Drink</a> est vendue avec une obligation de rot. Le non-respect de cette obligation engage la responsabilité du consommateur, de ses proches et de son plafond.<br>
+    5.3. La <a href="three-course-dinner-gum.html">Three-Course Dinner Gum</a> est déconseillée aux personnes pressées, aux gourmands et aux amateurs de tarte aux myrtilles.<br>
+    5.4. Le <a href="lickable-wallpaper.html">Lickable Wallpaper</a> ne doit pas être posé sur un mur porteur.<br>
+    5.5. Aucun produit n'est remboursable en bonbons.</p>
+  </div>
+
+  <div class="panel">
+    <h2 class="titre">6. Responsabilité</h2>
+    <p>La Wonka Chocolate Factory ne saurait être tenue responsable des changements de couleur, de taille, de flottabilité ou de visibilité survenant après consommation d'un produit issu du <a href="confiseries-experimentales.html">laboratoire</a>. En cas de transformation supérieure à quatre heures, un jus de citron est offert.</p>
+  </div>
+
+  <div class="panel jaune" style="text-align:center">
+    <h2 class="titre">Une question juridique ?</h2>
+    <p>Notre service juridique compte une personne. Elle est en dégustation.</p>
+    <a href="contact.html" class="btn">Contacter le service</a>
+    <a href="faq.html" class="btn btn-petit">Retour à la FAQ</a>
+  </div>
+</div>
+
+<footer class="site">
+  <div class="colonnes">
+    <div>
+      <h4>L'usine</h4>
+      <p>Wonka Chocolate Factory<br>14 boulevard du Cacao Fou<br>1971 Chocolatville-sur-Rivière</p>
+    </div>
+    <div>
+      <h4>Horaires</h4>
+      <p>Lundi – Vendredi : 9h – 18h<br>Samedi : 10h – 16h<br>Dimanche : fermé</p>
+    </div>
+    <div>
+      <h4>Besoin d'aide ?</h4>
+      <p><a href="faq.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Foire aux questions</a><br><a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Nous contacter</a><br><a href="mentions-legales.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Mentions légales</a><br><a href="recrutement.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Travailler à l'usine</a><br><a href="golden-ticket.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Trouver un Golden Ticket</a></p>
     </div>
   </div>
-  <p class="copyright">© 1964–2026 Chocolaterie Wonka. Tous droits réservés, même les droits de sucre.</p>
-  <p class="absurd">Les bonbons ne remplacent pas un repas équilibré, mais ils remplacent le lundi.</p>
+  <p class="absurde">© 1971-2026 Wonka Chocolate Factory — Tous droits réservés, y compris ceux qui n'existent pas encore. Aucun Oompa Loompa n'a été consulté pour la rédaction de ce site. Les chansons du service expédition sont comprises dans le prix.</p>
 </footer>
-
-<script>
-document.getElementById("annee-courante").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>

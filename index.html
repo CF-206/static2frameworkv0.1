@@ -3,441 +3,575 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wonka Chocolate Factory | Bonbons magiques et chocolats fantastiques</title>
-<meta name="description" content="Bienvenue à la Chocolaterie Wonka : tablettes magiques, Gobstoppers éternels, boissons pétillantes volantes. Découvrez nos confiseries fantastiques et réservez votre visite !">
-<meta name="keywords" content="chocolat, wonka, bonbons, gobstopper, usine">
-<link rel="canonical" href="https://www.wonka-chocolaterie.fr/index.html">
-<meta property="og:title" content="Wonka Chocolate Factory | Bonbons magiques">
-<meta property="og:description" content="Tablettes magiques, Gobstoppers éternels et boissons pétillantes volantes. Réservez votre visite !">
+<title>Wonka Chocolate Factory - Accueil officiel de la chocolaterie</title>
+<meta name="description" content="Bienvenue à la Wonka Chocolate Factory : chocolats, confiseries expérimentales, boissons qui font flotter et cinq Golden Tickets cachés chaque année.">
+<meta name="author" content="Service communication Wonka">
+<link rel="canonical" href="https://www.wonka-chocolate-factory.example/index.html">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.wonka-chocolaterie.fr/index.html">
+<meta property="og:title" content="Wonka Chocolate Factory - La chocolaterie la plus étrange du monde">
+<meta property="og:description" content="Chocolats, confiseries expérimentales et visites d'usine. Entrée uniquement sur Golden Ticket.">
+<meta property="og:url" content="https://www.wonka-chocolate-factory.example/index.html">
+<meta property="og:site_name" content="Wonka Chocolate Factory">
+<meta property="og:locale" content="fr_FR">
+<style>
+/* ============================================================
+   FEUILLE DE STYLE WONKA  —  copiée depuis index.html
+   /!\ NE PAS MODIFIER SANS VERIFIER LES AUTRES PAGES /!\
+   ============================================================ */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#3b1a2b;font-family:Verdana,"Trebuchet MS",Tahoma,sans-serif;font-size:15px;line-height:1.65;
+ background-color:#ffe8f0;
+ background-image:radial-gradient(#ffd166 2px,transparent 3px),radial-gradient(#8ad7f2 2px,transparent 3px),repeating-linear-gradient(135deg,#ffd9ec 0 24px,#ffeaf6 24px 48px);
+ background-size:60px 60px,60px 60px,auto;background-position:0 0,30px 30px,0 0;background-attachment:fixed}
+h1,h2,h3,h4,.logo,.btn,.badge,.prix{font-family:"Cooper Black","Bookman Old Style",Rockwell,Georgia,serif;font-weight:400;letter-spacing:.3px}
+a{color:#a3256b}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* bandeau défilant */
+.topbar{overflow:hidden;background:#d7255c;color:#fff6e5;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.topbar .bande{display:inline-block;white-space:nowrap;padding:7px 0;animation:defile 26s linear infinite}
+@keyframes defile{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+
+/* en-tête */
+header.site{background:linear-gradient(180deg,#4a1163,#31093f);border-bottom:3px solid #ffd166;padding:0;position:relative}
+header.site:before{content:"";display:block;height:6px;background:repeating-linear-gradient(90deg,#ff5d8f 0 26px,#ffd166 26px 52px,#41e0a3 52px 78px,#8ad7f2 78px 104px)}
+.logo{margin:0}
+.logo img{position:relative;z-index:5;display:block;width:auto;height:80px;margin-bottom:-36px}@media(max-width:1020px){.logo img{height:70px;margin-bottom:-30px}}@media(max-width:920px){.logo img{height:58px;margin-bottom:-24px}}header.site .wrap{max-width:1100px;display:flex;align-items:center;flex-wrap:wrap;gap:14px;min-height:66px}.menu-toggle{position:absolute;width:1px;height:1px;opacity:0}.burger{display:none;margin-left:auto;color:#ffd166;font-size:24px;line-height:1;cursor:pointer;padding:10px 2px;user-select:none}
+nav.main{display:flex;align-items:center;gap:4px;margin-left:auto}@media(max-width:920px){.burger{display:inline-flex}nav.main{display:none;flex-direction:column;align-items:stretch;gap:2px;width:100%;margin:0;padding:28px 0 14px}nav.main a{padding:12px 16px;border-radius:12px}.menu-toggle:checked~nav.main{display:flex}}
+nav.main a{color:#efe1fb;text-decoration:none;font-weight:bold;font-size:clamp(9.5px,.92vw,11.5px);text-transform:uppercase;letter-spacing:.4px;padding:.65em .95em;border-radius:999px;white-space:nowrap;transition:background .15s,color .15s}
+nav.main a:hover{background:rgba(255,209,102,.16);color:#ffd166}nav.main a[aria-current=page]{background:#1e0530;color:#fff6e5;box-shadow:inset 0 0 0 2px #8a35a8}.logo a{display:block;line-height:0}
+
+/* boutons */
+.btn{display:inline-block;text-decoration:none;border:4px solid #3a0f52;border-radius:14px;padding:12px 22px;font-size:16px;cursor:pointer;box-shadow:6px 6px 0 #3a0f52;transition:transform .12s,box-shadow .12s;background:#ffd166;color:#3a0f52;text-align:center}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 #3a0f52}
+.btn:active{transform:translate(3px,3px);box-shadow:2px 2px 0 #3a0f52}
+.btn-ticket{background:linear-gradient(#ffe066,#ffb703);font-size:19px;animation:brille 2.4s ease-in-out infinite}
+.btn-rose{background:#ff5d8f;color:#fff6e5}
+.btn-vert{background:#41e0a3}
+.btn-bleu{background:#8ad7f2}
+.btn-petit{font-size:13px;padding:8px 14px;box-shadow:4px 4px 0 #3a0f52;border-width:3px}
+@keyframes brille{0%,100%{filter:brightness(1)}50%{filter:brightness(1.18) saturate(1.25)}}
+
+/* panneaux */
+section{padding:44px 0}
+.panel{background:#fff6e5;border:5px solid #3a0f52;border-radius:26px;box-shadow:10px 10px 0 #ff5d8f;padding:26px;margin:0 0 26px}
+.panel.vert{box-shadow:10px 10px 0 #41e0a3}
+.panel.jaune{box-shadow:10px 10px 0 #ffd166}
+.panel.bleu{box-shadow:10px 10px 0 #8ad7f2}
+.panel.violet{box-shadow:10px 10px 0 #b07bd8}
+.titre{font-size:clamp(26px,4.6vw,44px);margin:0 0 8px;color:#3a0f52;text-shadow:3px 3px 0 #ffd166}
+.sous-titre{font-size:15px;margin:0 0 22px;color:#7a3b5c}
+hr.bonbon{border:0;height:8px;background:repeating-linear-gradient(90deg,#ff5d8f 0 16px,#ffd166 16px 32px,#41e0a3 32px 48px,#8ad7f2 48px 64px);border-radius:8px;margin:22px 0}
+
+/* grille produits */
+.grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.carte{background:#fff;border:4px solid #3a0f52;border-radius:20px;padding:16px;box-shadow:7px 7px 0 #3a0f52;transition:transform .18s,box-shadow .18s;position:relative}
+.carte:hover{transform:translate(-4px,-4px) rotate(-1deg);box-shadow:12px 12px 0 #ff5d8f}
+.carte h3{margin:6px 0 4px;font-size:20px}
+.carte .visuel{height:118px;border-radius:14px;border:3px dashed #3a0f52;display:flex;align-items:center;justify-content:center;font-size:52px;margin-bottom:10px}
+.prix{font-size:24px;color:#c1121f}
+.badge{display:inline-block;background:#ff5d8f;color:#fff6e5;border:3px solid #3a0f52;border-radius:999px;padding:3px 11px;font-size:11px;text-transform:uppercase;letter-spacing:1px;box-shadow:3px 3px 0 #3a0f52}
+.badge.vert{background:#41e0a3;color:#123a2c}
+.badge.jaune{background:#ffd166;color:#5a3a00}
+.badge.bleu{background:#8ad7f2;color:#0b3d4d}
+.badge.clignote{animation:clignote 1s steps(2) infinite}
+@keyframes clignote{50%{opacity:.25}}
+
+/* faq */
+.faq details{background:#fff;border:3px solid #3a0f52;border-radius:14px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:bold;padding:12px 14px;background:#ffe8f0;border-radius:10px}
+.faq details[open] summary{background:#ffd166}
+.faq p{padding:6px 14px 14px;margin:0}
+
+/* pied de page */
+footer.site{background:#3a0f52;color:#ffe8f0;border-top:7px solid #ffd166;padding:34px 16px 20px;margin-top:40px}
+footer.site .colonnes{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));max-width:1100px;margin:0 auto}
+footer.site h4{color:#ffd166;font-size:18px;margin:0 0 8px}
+footer.site a{color:#8ad7f2}
+footer.site .absurde{max-width:1100px;margin:22px auto 0;font-size:12px;font-style:italic;color:#d8b6ea;border-top:2px dotted #8a35a8;padding-top:12px}
+
+/* ===== SPECIFIQUE PAGE ACCUEIL ===== */
+.accroche{display:grid;gap:26px;grid-template-columns:1fr;padding:64px 0 10px}
+@media(min-width:880px){.accroche{grid-template-columns:1.15fr .85fr;align-items:center}}
+.sur-titre{display:inline-block;background:#3a0f52;color:#ffd166;padding:5px 14px;border-radius:999px;font-size:12px;letter-spacing:2px;text-transform:uppercase;border:3px solid #ffd166}
+.accroche h1{font-family:"Cooper Black","Bookman Old Style",Rockwell,Georgia,serif;font-weight:400;font-size:clamp(36px,7vw,74px);line-height:1.02;margin:14px 0 10px;color:#3a0f52;text-shadow:4px 4px 0 #ffd166,7px 7px 0 #ff5d8f,0 14px 24px rgba(0,0,0,.22)}
+.accroche h1 em{font-style:normal;color:#c1121f}
+.accroche p.lead{font-size:17px;max-width:46ch}
+.usine-visuels{position:relative;padding:26px 20px 30px 12px}
+.usine-fond{position:absolute;top:50%;right:-24px;width:48%;height:70%;object-fit:cover;border:4px solid #3a0f52;border-radius:20px;box-shadow:10px 10px 0 #8ad7f2;transform:translateY(-50%) rotate(-2.5deg)}
+.usine-photo{margin:0;width:80%;background:#fff6e5;border:5px solid #3a0f52;border-radius:18px;padding:14px;box-shadow:12px 12px 0 #ff5d8f;transform:translateX(-10px) rotate(2deg);position:relative;z-index:1}
+.usine-photo img{display:block;width:100%;height:auto;border-radius:10px}
+.usine-photo figcaption{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#7a3b5c;text-align:center;margin-top:10px}
+.chiffres-entete{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between;margin-bottom:4px}
+.chiffres{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));margin-top:18px}
+.chiffre{background:#fff;border:3px solid #3a0f52;border-radius:16px;padding:20px 14px 18px;text-align:center;box-shadow:0 4px 0 rgba(58,15,82,.15);transition:transform .18s,box-shadow .18s}
+.chiffre:hover{transform:translateY(-4px);box-shadow:0 9px 0 rgba(58,15,82,.2)}
+.chiffre .pastille{width:52px;height:52px;margin:0 auto 12px;border-radius:14px;border:3px solid #3a0f52;display:flex;align-items:center;justify-content:center;color:#3a0f52}
+.chiffre .pastille svg{width:26px;height:26px}
+.chiffre .nb{font-family:"Cooper Black",Rockwell,Georgia,serif;font-size:42px;color:#3a0f52;display:block;line-height:1}
+.chiffre small{text-transform:uppercase;letter-spacing:1px;font-size:11px;color:#7a3b5c;display:block;margin-top:8px}
+.note-chiffres{text-align:center;font-size:12px;font-style:italic;color:#7a3b5c;margin:18px 0 0}
+.note-chiffres svg{width:14px;height:14px;color:#2c7a4b;vertical-align:-2px;margin-right:4px}
+.tapis{overflow:hidden;background:#3a0f52;border:5px solid #3a0f52;border-radius:18px;margin-top:26px}
+.tapis .bande-c{white-space:nowrap;font-size:40px;padding:10px 0;animation:tapis 18s linear infinite;color:#ffd166}
+@keyframes tapis{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.etapes{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.etape{background:#fff;border:4px solid #3a0f52;border-radius:18px;padding:18px;box-shadow:7px 7px 0 #41e0a3}
+.etape .n{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#ff5d8f;color:#fff6e5;border:3px solid #3a0f52;font-family:"Cooper Black",Georgia,serif;font-size:20px;margin-bottom:8px}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.reveal.vu{opacity:1;transform:none}
+.visuel{position:relative}.visuel .badge{position:absolute;top:4px;left:4px;z-index:1;font-size:10px;padding:2px 8px}
+/* hero visite — fond rivière de chocolat */
+.hero-riviere{position:relative;border:5px solid #3a0f52;border-radius:26px;overflow:hidden;box-shadow:10px 10px 0 #8ad7f2;padding:70px 26px;text-align:center;background-image:url("bateau-rose.png");background-size:cover;background-position:center 62%}
+.hero-riviere:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(23,9,3,.88),rgba(64,29,12,.58))}
+.hero-riviere h2{position:relative;color:#fff6e5;text-shadow:3px 3px 0 #3a0f52;margin:0 0 12px;font-size:clamp(28px,5vw,48px)}
+.hero-riviere p{position:relative;color:#fff6e5;font-weight:bold;text-shadow:1px 1px 0 #3a0f52;max-width:56ch;margin:0 auto 20px}
+/* bloc visite 60/40 : étapes à gauche, photo labo à droite */
+.visite-bloc{display:grid;gap:26px;grid-template-columns:3fr 2fr;align-items:start;margin-bottom:80px}
+@media(max-width:880px){.visite-bloc{grid-template-columns:1fr}}
+.visite-photo{margin:-40px 0 0;background:#fff6e5;border:5px solid #3a0f52;border-radius:18px;padding:14px;box-shadow:12px 12px 0 #8ad7f2;transform:rotate(2deg);max-width:320px;justify-self:end}
+.visite-photo img{display:block;width:100%;height:auto;border-radius:10px}
+.visite-photo figcaption{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#7a3b5c;text-align:center;margin-top:10px}
+.etape-entete{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.etape-entete .n{margin-bottom:0}
+.etape-entete .ico{flex:none;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:#ffe8f0;border:3px solid #3a0f52;border-radius:12px;color:#3a0f52}
+.etape-entete .ico svg{width:22px;height:22px}</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Wonka Chocolate Factory",
-  "url": "https://www.wonka-chocolaterie.fr/",
-  "logo": "https://www.wonka-chocolaterie.fr/logo-wonka.png",
-  "slogan": "Des bonbons magiques depuis 1964",
-  "foundingDate": "1964-04-01",
-  "founder": {
-    "@type": "Person",
-    "name": "Willy Wonka"
-  },
+  "alternateName": "Chocolaterie Wonka",
+  "url": "https://www.wonka-chocolate-factory.example/",
+  "logo": "https://www.wonka-chocolate-factory.example/logo-wonka.png",
+  "slogan": "Un peu de non-sens, beaucoup de chocolat.",
+  "foundingDate": "1971",
+  "founder": { "@type": "Person", "name": "Willy Wonka", "jobTitle": "Fondateur et goûteur en chef" },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1 rue des Rêves Sucrés",
-    "postalCode": "99999",
-    "addressLocality": "Chocolat-sur-Mer",
+    "streetAddress": "14 boulevard du Cacao Fou",
+    "addressLocality": "Chocolatville-sur-Rivière",
+    "postalCode": "1971",
     "addressCountry": "FR"
   },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+33-9-72-55-01-96",
-    "contactType": "service client"
-  }
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "contactPoint": { "@type": "ContactPoint", "telephone": "+33-1-WONKA-71", "contactType": "customer service", "availableLanguage": ["fr", "Oompa-Loompa"] }
 }
 </script>
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: "Comic Sans MS", "Trebuchet MS", Verdana, sans-serif;
-  color: #4a1060;
-  background-color: #fdf0ff;
-  background-image:
-    radial-gradient(rgba(255, 105, 238, 0.22) 12%, transparent 13%),
-    radial-gradient(rgba(255, 210, 63, 0.25) 12%, transparent 13%);
-  background-size: 90px 90px, 150px 150px;
-  background-position: 0 0, 45px 45px;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.wonka-chocolate-factory.example/index.html" }
+  ]
 }
-
-.site-header {
-  background: linear-gradient(135deg, #5b1670 0%, #5c33a3 55%, #d24fd0 100%);
-  border-bottom: 8px double #ffd700;
-  padding: 24px 16px 18px;
-  text-align: center;
-  box-shadow: 0 6px 18px rgba(60, 5, 80, 0.45);
-}
-
-.logo-img {
-  width: 320px;
-  max-width: 85%;
-  height: auto;
-  filter: drop-shadow(0 5px 0 rgba(30, 8, 60, 0.45));
-}
-
-.slogan {
-  margin-top: 6px;
-  color: #ffeaff;
-  font-style: italic;
-  font-size: 17px;
-}
-
-.main-nav { margin-top: 14px; }
-
-.main-nav a {
-  display: inline-block;
-  margin: 4px 5px;
-  padding: 8px 16px;
-  background: #ffffff;
-  color: #5c33a3;
-  font-weight: bold;
-  font-size: 15px;
-  border: 3px solid #5c33a3;
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 4px 0 #3d2170;
-}
-
-.main-nav a:hover { transform: translateY(-2px); background: #efe7ff; }
-
-.main-nav a.active {
-  background: #5c33a3;
-  color: #ffffff;
-  box-shadow: 0 4px 0 #3d2170;
-}
-
-.hero {
-  text-align: center;
-  padding: 54px 16px 40px;
-  background: radial-gradient(circle at 50% 30%, rgba(255, 215, 0, 0.35), transparent 65%);
-}
-
-.hero h1 {
-  font-family: Georgia, serif;
-  font-size: 52px;
-  color: #5b1670;
-  text-shadow: 3px 3px 0 #ffd700, 6px 6px 0 rgba(91, 22, 112, 0.25);
-  margin-bottom: 14px;
-}
-
-.hero .etoiles { font-size: 26px; letter-spacing: 10px; color: #e0349c; }
-
-.hero p.accroche {
-  max-width: 640px;
-  margin: 14px auto 24px;
-  font-size: 19px;
-  font-style: italic;
-  color: #7a2288;
-}
-
-.btn-wonka {
-  display: inline-block;
-  padding: 16px 34px;
-  background: #5c33a3;
-  color: #ffffff;
-  font-size: 21px;
-  font-weight: bold;
-  border: 4px solid #ffffff;
-  border-radius: 40px;
-  text-decoration: none;
-  cursor: pointer;
-  box-shadow: 0 0 0 3px #5c33a3, 0 8px 0 #3d2170, 0 14px 26px rgba(60, 20, 110, 0.45);
-  font-family: inherit;
-}
-
-.btn-wonka:hover { transform: scale(1.05) rotate(-1deg); }
-
-.section-title {
-  text-align: center;
-  font-family: Georgia, serif;
-  font-size: 36px;
-  color: #5c33a3;
-  text-shadow: 2px 2px 0 #ffd700, 4px 4px 0 rgba(142, 31, 158, 0.25);
-  margin: 42px 0 8px;
-}
-
-.section-sub {
-  text-align: center;
-  font-style: italic;
-  color: #5c33a3;
-  margin-bottom: 12px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 26px;
-  justify-content: center;
-  max-width: 1100px;
-  margin: 28px auto;
-  padding: 0 18px;
-}
-
-.card {
-  width: 280px;
-  background: #fff7ff;
-  border: 5px solid #5c33a3;
-  border-radius: 24px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 8px 8px 0 #ffb8ec;
-  position: relative;
-}
-
-.card:hover { transform: rotate(-1deg) scale(1.02); transition: all 0.2s; }
-
-.badge {
-  position: absolute;
-  top: -14px;
-  right: -10px;
-  background: #ff2e63;
-  color: #ffffff;
-  padding: 4px 12px;
-  border-radius: 999px;
-  border: 3px solid #ffffff;
-  transform: rotate(8deg);
-  font-weight: bold;
-  font-size: 13px;
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
-}
-
-.badge.green { background: #27ae60; }
-.badge.orange { background: #f39c12; }
-
-.card .visuel { font-size: 64px; margin: 10px 0; }
-
-.card h3 { font-size: 21px; color: #5b1670; margin-bottom: 6px; }
-
-.card p { font-size: 15px; margin-bottom: 10px; }
-
-.prix { font-size: 26px; color: #c2185b; font-weight: bold; display: block; margin-bottom: 12px; }
-
-.btn-pink {
-  display: inline-block;
-  padding: 10px 22px;
-  background: linear-gradient(#ff77c8, #e0349c);
-  color: #ffffff;
-  font-weight: bold;
-  border: 3px solid #ffffff;
-  border-radius: 999px;
-  text-decoration: none;
-  box-shadow: 0 5px 0 #9c1668;
-  font-size: 15px;
-}
-
-.btn-pink:hover { transform: translateY(-2px); }
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 22px;
-  justify-content: center;
-  max-width: 1050px;
-  margin: 26px auto;
-  padding: 0 18px;
-}
-
-.feature {
-  width: 230px;
-  background: repeating-linear-gradient(45deg, #fffbe6, #fffbe6 12px, #fff3b8 12px, #fff3b8 24px);
-  border: 4px dashed #ffb400;
-  border-radius: 20px;
-  padding: 18px;
-  text-align: center;
-  box-shadow: 6px 6px 0 rgba(255, 180, 0, 0.35);
-}
-
-.feature .icone { font-size: 42px; }
-
-.feature h3 { color: #5c33a3; margin: 8px 0 6px; font-size: 18px; }
-
-.feature p { font-size: 14px; }
-
-.quote-zone {
-  max-width: 700px;
-  margin: 30px auto;
-  padding: 26px;
-  background: #ffffff;
-  border: 6px double #ffd700;
-  border-radius: 30px;
-  text-align: center;
-  box-shadow: 0 12px 30px rgba(142, 31, 158, 0.25);
-}
-
-.quote-zone blockquote {
-  font-family: Georgia, serif;
-  font-size: 24px;
-  font-style: italic;
-  color: #5b1670;
-  min-height: 70px;
-}
-
-.cta-band {
-  text-align: center;
-  margin: 46px auto 10px;
-  padding: 34px 18px;
-  background: linear-gradient(120deg, #ff77c8, #ffb400, #27ae60, #5b1670);
-  border-top: 6px solid #ffd700;
-  border-bottom: 6px solid #ffd700;
-}
-
-.cta-band p {
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: bold;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
-  margin-bottom: 16px;
-}
-
-.site-footer {
-  margin-top: 50px;
-  background: linear-gradient(160deg, #3d0a56, #6b1f8f);
-  color: #ffe9ff;
-  border-top: 8px double #ffd700;
-  padding: 34px 20px 20px;
-  text-align: center;
-}
-
-.footer-cols {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 34px;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto 22px;
-  text-align: left;
-}
-
-.footer-cols h3 { color: #ffd700; margin-bottom: 8px; font-size: 19px; }
-
-.footer-cols a { color: #ffb8ec; }
-
-.copyright { border-top: 2px dashed rgba(255, 215, 0, 0.5); padding-top: 14px; font-size: 14px; }
-
-.absurd { margin-top: 6px; font-size: 13px; font-style: italic; color: #d8a8ef; }
-
-@media (max-width: 700px) {
-  .logo-img { width: 220px; }
-  .hero h1 { font-size: 34px; }
-}
-</style>
+</script>
 </head>
 <body>
 
-<header class="site-header">
-  <img class="logo-img" src="logo-wonka.png" alt="Wonka Chocolate Factory" width="320">
-  <p class="slogan">✦ Des bonbons magiques depuis 1964 ✦</p>
-  <nav class="main-nav">
-    <a href="index.html" class="active">Accueil</a>
-    <a href="produits.html">Nos chocolats</a>
-    <a href="confiseries-experimentales.html">Confiseries expérimentales</a>
-    <a href="visite-usine.html">Visiter l&rsquo;usine</a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<div class="topbar"><span class="bande">★ Bienvenue à la Wonka Chocolate Factory ★ Il reste 5 Golden Tickets cachés cette année ★ Livraison par pigeons entraînés ★ Ni repris, ni échangé, ni remboursé en bonbons ★ Le service expédition chante pendant le travail ★</span></div>
 
-<section class="hero">
-  <div class="etoiles">★ ★ ★</div>
-  <h1>Bienvenue à la Chocolaterie Wonka&nbsp;!</h1>
-  <p class="accroche">Des rivières de chocolat, des écureuils trieurs de noix et des bonbons qui défient les lois de la physique. Tout cela, à deux clics de chez vous.</p>
-  <a class="btn-wonka" href="visite-usine.html">Réserver une visite guidée</a>
+<header class="site">
+  <div class="wrap">
+    <p class="logo"><a href="index.html" aria-label="Wonka Chocolate Factory - Accueil"><img src="logo-wonka.png" alt="Wonka Chocolate Factory" width="2000" height="1125"></a></p>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="burger" aria-label="Ouvrir le menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M4 6l16 0" />
+  <path d="M4 12l16 0" />
+  <path d="M4 18l16 0" />
+</svg></label>
+    <nav class="main">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="visite-usine.html">Visiter l'usine</a>
+      <a href="histoire.html">Notre histoire</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<script>
+(function(){
+  var page = location.pathname.split('/').pop() || 'index.html';
+  var parents = { 'wonka-bar.html':'produits.html', 'everlasting-gobstopper.html':'produits.html', 'fizzy-lifting-drink.html':'produits.html', 'three-course-dinner-gum.html':'produits.html', 'lickable-wallpaper.html':'produits.html', 'golden-egg.html':'produits.html', 'scrumdiddlyumptious-bar.html':'produits.html', 'invisible-chocolate.html':'produits.html' };
+  var cible = parents[page] || page;
+  var liens = document.querySelectorAll('nav.main a');
+  for (var i = 0; i < liens.length; i++) {
+    if (liens[i].getAttribute('href') === cible) {
+      liens[i].setAttribute('aria-current', 'page');
+    }
+  }
+})();
+</script>
+
+<div class="wrap">
+
+  <div class="accroche">
+    <div>
+      <span class="sur-titre">Usine ouverte depuis 1971</span>
+      <h1>La chocolaterie<br>la plus <em>étrange</em><br>du monde.</h1>
+      <p class="lead">Du chocolat qui fond dans le bon sens, des bonbons qui ne fondent jamais, des boissons qui vous font toucher le plafond. Tout est fabriqué à la main par des personnes très petites et très motivées.</p>
+      <p>
+        <a href="produits.html" class="btn btn-vert">Voir les chocolats</a>
+      </p>
+    </div>
+    <div>
+      <div class="usine-visuels">
+        <img class="usine-fond" src="interieur-usine.jpg" alt="Intérieur de la chocolaterie Wonka" width="3000" height="2000">
+        <figure class="usine-photo">
+          <img src="exterieur-usine.png" alt="Façade extérieure de la Wonka Chocolate Factory" width="565" height="353">
+          <figcaption>La façade officielle</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="tapis" aria-hidden="true"><div class="bande-c" id="tapis"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z" />
+  <path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913" />
+  <path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M14 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 10a3.5 3.5 0 0 0 -7 0" />
+  <path d="M14 10a3.5 3.5 0 0 1 -7 0" />
+  <path d="M14 17a3.5 3.5 0 0 0 0 -7" />
+  <path d="M14 3a3.5 3.5 0 0 0 0 7" />
+  <path d="M3 21l6 -6" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M14 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 10a3.5 3.5 0 0 0 -7 0" />
+  <path d="M14 10a3.5 3.5 0 0 1 -7 0" />
+  <path d="M14 17a3.5 3.5 0 0 0 0 -7" />
+  <path d="M14 3a3.5 3.5 0 0 0 0 7" />
+  <path d="M3 21l6 -6" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M3 20h18v-8a3 3 0 0 0 -3 -3h-12a3 3 0 0 0 -3 3v8z" />
+  <path d="M3 14.803c.312 .135 .654 .204 1 .197a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1c.35 .007 .692 -.062 1 -.197" />
+  <path d="M12 4l1.465 1.638a2 2 0 1 1 -3.015 .099l1.55 -1.737z" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path stroke="none" d="M0 0h24v24H0z" />
+  <path d="M8 13v.01" />
+  <path d="M12 17v.01" />
+  <path d="M12 12v.01" />
+  <path d="M16 14v.01" />
+  <path d="M11 8v.01" />
+  <path d="M13.148 3.476l2.667 1.104a4 4 0 0 0 4.656 6.14l.053 .132a3 3 0 0 1 0 2.296q -.745 1.18 -1.024 1.852q -.283 .684 -.66 2.216a3 3 0 0 1 -1.624 1.623q -1.572 .394 -2.216 .661q -.712 .295 -1.852 1.024a3 3 0 0 1 -2.296 0q -1.203 -.754 -1.852 -1.024q -.707 -.292 -2.216 -.66a3 3 0 0 1 -1.623 -1.624q -.397 -1.577 -.661 -2.216q -.298 -.718 -1.024 -1.852a3 3 0 0 1 0 -2.296q .719 -1.116 1.024 -1.852q .257 -.62 .66 -2.216a3 3 0 0 1 1.624 -1.623q 1.547 -.384 2.216 -.661q .687 -.285 1.852 -1.024a3 3 0 0 1 2.296 0" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M12 21.5v-4.5" />
+  <path d="M8 17h8v-10a4 4 0 1 0 -8 0v10z" />
+  <path d="M8 10.5l8 -3.5" />
+  <path d="M8 14.5l8 -3.5" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z" />
+  <path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913" />
+  <path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M14 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 10a3.5 3.5 0 0 0 -7 0" />
+  <path d="M14 10a3.5 3.5 0 0 1 -7 0" />
+  <path d="M14 17a3.5 3.5 0 0 0 0 -7" />
+  <path d="M14 3a3.5 3.5 0 0 0 0 7" />
+  <path d="M3 21l6 -6" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M14 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 10a3.5 3.5 0 0 0 -7 0" />
+  <path d="M14 10a3.5 3.5 0 0 1 -7 0" />
+  <path d="M14 17a3.5 3.5 0 0 0 0 -7" />
+  <path d="M14 3a3.5 3.5 0 0 0 0 7" />
+  <path d="M3 21l6 -6" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M3 20h18v-8a3 3 0 0 0 -3 -3h-12a3 3 0 0 0 -3 3v8z" />
+  <path d="M3 14.803c.312 .135 .654 .204 1 .197a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1c.35 .007 .692 -.062 1 -.197" />
+  <path d="M12 4l1.465 1.638a2 2 0 1 1 -3.015 .099l1.55 -1.737z" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path stroke="none" d="M0 0h24v24H0z" />
+  <path d="M8 13v.01" />
+  <path d="M12 17v.01" />
+  <path d="M12 12v.01" />
+  <path d="M16 14v.01" />
+  <path d="M11 8v.01" />
+  <path d="M13.148 3.476l2.667 1.104a4 4 0 0 0 4.656 6.14l.053 .132a3 3 0 0 1 0 2.296q -.745 1.18 -1.024 1.852q -.283 .684 -.66 2.216a3 3 0 0 1 -1.624 1.623q -1.572 .394 -2.216 .661q -.712 .295 -1.852 1.024a3 3 0 0 1 -2.296 0q -1.203 -.754 -1.852 -1.024q -.707 -.292 -2.216 -.66a3 3 0 0 1 -1.623 -1.624q -.397 -1.577 -.661 -2.216q -.298 -.718 -1.024 -1.852a3 3 0 0 1 0 -2.296q .719 -1.116 1.024 -1.852q .257 -.62 .66 -2.216a3 3 0 0 1 1.624 -1.623q 1.547 -.384 2.216 -.661q .687 -.285 1.852 -1.024a3 3 0 0 1 2.296 0" />
+</svg> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M12 21.5v-4.5" />
+  <path d="M8 17h8v-10a4 4 0 1 0 -8 0v10z" />
+  <path d="M8 10.5l8 -3.5" />
+  <path d="M8 14.5l8 -3.5" />
+</svg> </div></div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="panel violet reveal">
+      <div class="chiffres-entete">
+        <div>
+          <h2 class="titre" style="margin-bottom:2px">L'usine en quelques chiffres</h2>
+          <p class="sous-titre" style="margin:0">Chiffres vérifiés une fois, en 1974. Recomptage 2026 en cours.</p>
+        </div>
+        <span class="badge vert">Rapport annuel</span>
+      </div>
+<div class="chiffres">
+        <div class="chiffre">
+          <span class="pastille" style="background:#ddf3fd"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+  <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+          </svg></span>
+          <span class="nb" data-cible="5">0</span>
+          <small>visiteurs par an</small>
+        </div>
+        <div class="chiffre">
+          <span class="pastille" style="background:#ffe1ee"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M10 13a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+  <path d="M8 21v-1a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v1" />
+  <path d="M15 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+  <path d="M17 10h2a2 2 0 0 1 2 2v1" />
+  <path d="M5 5a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+  <path d="M3 13v-1a2 2 0 0 1 2 -2h2" />
+          </svg></span>
+          <span class="nb" data-cible="167">0</span>
+          <small>Oompa Loompas</small>
+        </div>
+        <div class="chiffre">
+          <span class="pastille" style="background:#fff3c9"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M14.7 13.5c-1.1 -2 -1.441 -2.5 -2.7 -2.5c-1.259 0 -1.736 .755 -2.836 2.747c-.942 1.703 -2.846 1.845 -3.321 3.291c-.097 .265 -.145 .677 -.143 .962c0 1.176 .787 2 1.8 2c1.259 0 3 -1 4.5 -1s3.241 1 4.5 1c1.013 0 1.8 -.823 1.8 -2c0 -.285 -.049 -.697 -.146 -.962c-.475 -1.451 -2.512 -1.835 -3.454 -3.538z" />
+  <path d="M20.188 8.082a1.039 1.039 0 0 0 -.406 -.082h-.015c-.735 .012 -1.56 .75 -1.993 1.866c-.519 1.335 -.28 2.7 .538 3.052c.129 .055 .267 .082 .406 .082c.739 0 1.575 -.742 2.011 -1.866c.516 -1.335 .273 -2.7 -.54 -3.052z" />
+  <path d="M9.474 9c.055 0 .109 0 .163 -.011c.944 -.128 1.533 -1.346 1.32 -2.722c-.203 -1.297 -1.047 -2.267 -1.932 -2.267c-.055 0 -.109 0 -.163 .011c-.944 .128 -1.533 1.346 -1.32 2.722c.204 1.293 1.048 2.267 1.933 2.267z" />
+  <path d="M16.456 6.733c.214 -1.376 -.375 -2.594 -1.32 -2.722a1.164 1.164 0 0 0 -.162 -.011c-.885 0 -1.728 .97 -1.93 2.267c-.214 1.376 .375 2.594 1.32 2.722c.054 .007 .108 .011 .162 .011c.885 0 1.73 -.974 1.93 -2.267z" />
+  <path d="M5.69 12.918c.816 -.352 1.054 -1.719 .536 -3.052c-.436 -1.124 -1.271 -1.866 -2.009 -1.866c-.14 0 -.277 .027 -.407 .082c-.816 .352 -1.054 1.719 -.536 3.052c.436 1.124 1.271 1.866 2.009 1.866c.14 0 .277 -.027 .407 -.082z" />
+          </svg></span>
+          <span class="nb" data-cible="40">0</span>
+          <small>écureuils dressés</small>
+        </div>
+        <div class="chiffre">
+          <span class="pastille" style="background:#defaf0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<path d="M14 4h6v6h-6z" />
+  <path d="M4 14h6v6h-6z" />
+  <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+  <path d="M7 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              </svg></span>
+                  <span class="nb" data-cible="12">0</span>
+                  <small>catégories de produits</small>
+        </div>
+      </div>
+      <p class="note-chiffres"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M5 12l5 5l10 -10" />
+</svg>Données auditées par un comité indépendant d'Oompa Loompas — méthodologie non communiquée.</p>
+    </div>
+  </div>
 </section>
 
-<h2 class="section-title">Nos créations vedettes</h2>
-<p class="section-sub">Sélectionnées par Willy Wonka en personne (et par trois Oompa Loompas).</p>
-
-<div class="cards">
-  <div class="card">
-    <span class="badge green">Best-seller</span>
-    <div class="visuel">🍫</div>
-    <h3>Wonka Bar</h3>
-    <p>La tablette originale à la recette secrète, souvenir officiel de la visite.</p>
-    <span class="prix">4,99 €</span><br>
-    <a class="btn-pink" href="wonka-bar.html">Voir la fiche</a>
-  </div>
-  <div class="card">
-    <span class="badge orange">Très rare</span>
-    <div class="visuel">🔮</div>
-    <h3>Everlasting Gobstopper</h3>
-    <p>Le bonbon qui ne finit jamais. Vraiment jamais. Nos comptables détestent ce produit.</p>
-    <span class="prix">39,90 €</span><br>
-    <a class="btn-pink" href="everlasting-gobstopper.html">Voir la fiche</a>
-  </div>
-  <div class="card">
-    <span class="badge">Nouveau !</span>
-    <div class="visuel">🍬</div>
-    <h3>Three Course Dinner Gum</h3>
-    <p>Un repas complet en un seul chewing-gum. Le dessert est encore en phase de test.</p>
-    <span class="prix">8,99 €</span><br>
-    <a class="btn-pink" href="three-course-dinner-gum.html">Voir la fiche</a>
-  </div>
-</div>
-
-<h2 class="section-title">Pourquoi choisir Wonka&nbsp;?</h2>
-<p class="section-sub">Parce que le chocolat ordinaire, c'est triste.</p>
-
-<div class="features">
-  <div class="feature">
-    <div class="icone">🚚</div>
-    <h3>Livraison express</h3>
-    <p>Par notre escadrille d'écureuils dressés. Délai moyen : 48 h (sauf si noisettes).</p>
-  </div>
-  <div class="feature">
-    <div class="icone">🎩</div>
-    <h3>Garantie magique</h3>
-    <p>Chaque produit est contrôlé visuellement par Willy Wonka lui-même.</p>
-  </div>
-  <div class="feature">
-    <div class="icone">🏭</div>
-    <h3>Fabrique secrète</h3>
-    <p>Aucune caméra autorisée depuis 1971. Les murs sont comestibles.</p>
-  </div>
-  <div class="feature">
-    <div class="icone">🎵</div>
-    <h3>Service Oompa Loompa</h3>
-    <p>Un service client disponible 24h/24 qui répond uniquement en chanson.</p>
-  </div>
-</div>
-
-<div class="quote-zone">
-  <blockquote id="zone-citation">Cliquez sur le bouton pour recevoir la Sagesse de Wonka du jour.</blockquote>
-  <button class="btn-pink" onclick="citationAleatoire()">Une autre citation&nbsp;!</button>
-</div>
-
-<div class="cta-band">
-  <p>⭐ Visites guidées du lundi au samedi — 12 visiteurs par groupe ⭐</p>
-  <a class="btn-wonka" href="visite-usine.html">Réserver une visite guidée</a>
-</div>
-
-<footer class="site-footer">
-  <div class="footer-cols">
-    <div>
-      <h3>La Chocolaterie Wonka</h3>
-      <p>1 rue des Rêves Sucrés<br>Zone Fantastique Nord<br>99999 Chocolat-sur-Mer<br>Tél&nbsp;: 09 72 55 01 96</p>
-    </div>
-    <div>
-      <h3>Horaires</h3>
-      <p>Lundi – Vendredi&nbsp;: 9h – 18h<br>Samedi&nbsp;: 10h – 17h<br>Dimanche&nbsp;: fermé<br>(les Oompa Loompas se reposent)</p>
-    </div>
-    <div>
-      <h3>Liens utiles</h3>
-      <a href="faq.html">FAQ</a><br>
-      <a href="contact.html">Contact</a><br>
-      <a href="mentions-legales.html">Mentions légales</a><br>
-      <a href="histoire.html">Notre histoire</a>
+<section style="padding:0 0 44px">
+  <div class="wrap">
+    <div class="hero-riviere reveal">
+      <h2>La rivière de chocolat vous attend</h2>
+      <p>Un fleuve entièrement comestible, mélangé à la cascade, que vous aurez l'interdiction formelle de goûter. C'est tout l'intérêt de venir le voir en vrai.</p>
+      <a href="visite-usine.html" class="btn btn-ticket">Réserver ma visite</a>
     </div>
   </div>
-  <p class="copyright">© 1964–2026 Chocolaterie Wonka. Tous droits réservés, même les droits de sucre.</p>
-  <p class="absurd">Les bonbons ne remplacent pas un repas équilibré, mais ils remplacent le lundi.</p>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="titre">Nos best-sellers</h2>
+    <p class="sous-titre">Les quatre produits que l'on nous réclame le plus (et que l'on refuse parfois de vendre).</p>
+    <div class="grille">
+      <div class="carte reveal">
+        <div class="visuel" style="background:#f7d9a3"><span class="badge clignote">Nouveau</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M7.05 11.293l4.243 -4.243a2 2 0 0 1 2.828 0l2.829 2.83a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1 -2.828 0l-2.829 -2.831a2 2 0 0 1 0 -2.828z" />
+  <path d="M16.243 9.172l3.086 -.772a1.5 1.5 0 0 0 .697 -2.516l-2.216 -2.217a1.5 1.5 0 0 0 -2.44 .47l-1.248 2.913" />
+  <path d="M9.172 16.243l-.772 3.086a1.5 1.5 0 0 1 -2.516 .697l-2.217 -2.216a1.5 1.5 0 0 1 .47 -2.44l2.913 -1.248" />
+</svg></div>
+        <h3>Wonka Bar</h3>
+        <p style="font-size:13px;margin:0 0 8px">La barre qui a rendu cinq enfants célèbres.</p>
+        <p class="prix">3,50 €</p>
+        <a class="btn btn-petit" href="wonka-bar.html">Voir la fiche</a>
+      </div>
+      <div class="carte reveal">
+        <div class="visuel" style="background:#f4b8d6"><span class="badge jaune">Très rare</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M14 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 10a3.5 3.5 0 0 0 -7 0" />
+  <path d="M14 10a3.5 3.5 0 0 1 -7 0" />
+  <path d="M14 17a3.5 3.5 0 0 0 0 -7" />
+  <path d="M14 3a3.5 3.5 0 0 0 0 7" />
+  <path d="M3 21l6 -6" />
+</svg></div>
+        <h3>Everlasting Gobstopper</h3>
+        <p style="font-size:13px;margin:0 0 8px">Ça ne fond jamais. Jamais.</p>
+        <p class="prix">12,00 €</p>
+        <a class="btn btn-petit" href="everlasting-gobstopper.html">Voir la fiche</a>
+      </div>
+      <div class="carte reveal">
+        <div class="visuel" style="background:#c7ecf7"><span class="badge bleu">Édition limitée</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M10 5h4v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v2z" />
+  <path d="M14 3.5c0 1.626 .507 3.212 1.45 4.537l.05 .07a8.093 8.093 0 0 1 1.5 4.694v6.199a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-6.2c0 -1.682 .524 -3.322 1.5 -4.693l.05 -.07a7.823 7.823 0 0 0 1.45 -4.537" />
+  <path d="M7 14.803a2.4 2.4 0 0 0 1 -.803a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 1 -.805" />
+</svg></div>
+        <h3>Fizzy Lifting Drink</h3>
+        <p style="font-size:13px;margin:0 0 8px">Buvez, flottez, touchez le plafond.</p>
+        <p class="prix">6,50 €</p>
+        <a class="btn btn-petit" href="fizzy-lifting-drink.html">Voir la fiche</a>
+      </div>
+      <div class="carte reveal">
+        <div class="visuel" style="background:#e2c9f5"><span class="badge vert">Signature</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M14 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 10a3.5 3.5 0 0 0 -7 0" />
+  <path d="M14 10a3.5 3.5 0 0 1 -7 0" />
+  <path d="M14 17a3.5 3.5 0 0 0 0 -7" />
+  <path d="M14 3a3.5 3.5 0 0 0 0 7" />
+  <path d="M3 21l6 -6" />
+</svg></div>
+        <h3>Scrumdiddlyumptious Bar</h3>
+        <p style="font-size:13px;margin:0 0 8px">Le mot n'existe pas. Le chocolat si.</p>
+        <p class="prix">5,50 €</p>
+        <a class="btn btn-petit" href="scrumdiddlyumptious-bar.html">Voir la fiche</a>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:26px"><a href="produits.html" class="btn btn-rose">Voir les 8 produits du catalogue</a></p>
+    <hr class="bonbon" style="margin-top:64px">
+  </div>
+</section>
+
+<section style="padding:0 0 80px">
+  <div class="wrap">
+    <h2 class="titre reveal">Visiter l'usine en 4 étapes</h2>
+    <p class="sous-titre reveal">Détail complet sur la page <a href="visite-usine.html">Visiter l'usine</a>.</p>
+    <div class="visite-bloc reveal">
+      <div class="etapes">
+        <div class="etape">
+          <div class="etape-entete"><span class="n">1</span><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M15 5l0 2" />
+  <path d="M15 11l0 2" />
+  <path d="M15 17l0 2" />
+  <path d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
+</svg></span></div>
+          <h3 style="margin:0 0 6px;font-size:19px">Trouver un ticket</h3>
+          <p style="font-size:13px;margin:0">Dans une <a href="wonka-bar.html">Wonka Bar</a> ou dans un <a href="golden-egg.html">Golden Egg</a>. Jamais ailleurs, et surtout pas sur internet.</p>
+        </div>
+        <div class="etape">
+          <div class="etape-entete"><span class="n">2</span><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M20 17v-12c0 -1.121 -.879 -2 -2 -2s-2 .879 -2 2v12l2 2l2 -2z" />
+  <path d="M16 7h4" />
+  <path d="M18 19h-13a2 2 0 1 1 0 -4h4a2 2 0 1 0 0 -4h-3" />
+</svg></span></div>
+          <h3 style="margin:0 0 6px;font-size:19px">Signer le contrat</h3>
+          <p style="font-size:13px;margin:0">47 pages. La page 12 contient une clause sur les plafonds.</p>
+        </div>
+        <div class="etape">
+          <div class="etape-entete"><span class="n">3</span><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M8 13v-7.5a1.5 1.5 0 0 1 3 0v6.5" />
+  <path d="M11 5.5v-2a1.5 1.5 0 1 1 3 0v8.5" />
+  <path d="M14 5.5a1.5 1.5 0 0 1 3 0v6.5" />
+  <path d="M17 7.5a1.5 1.5 0 0 1 3 0v8.5a6 6 0 0 1 -6 6h-2h.208a6 6 0 0 1 -5.012 -2.7a69.74 69.74 0 0 1 -.196 -.3c-.312 -.479 -1.407 -2.388 -3.286 -5.728a1.5 1.5 0 0 1 .536 -2.022a1.867 1.867 0 0 1 2.28 .28l1.47 1.47" />
+</svg></span></div>
+          <h3 style="margin:0 0 6px;font-size:19px">Ne rien toucher</h3>
+          <p style="font-size:13px;margin:0">Surtout dans la salle des confiseries expérimentales.</p>
+        </div>
+        <div class="etape">
+          <div class="etape-entete"><span class="n">4</span><span class="ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M5 4m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+  <path d="M10 10l2 -2l2 2" />
+  <path d="M10 14l2 2l2 -2" />
+</svg></span></div>
+          <h3 style="margin:0 0 6px;font-size:19px">Sortir par l'ascenseur</h3>
+          <p style="font-size:13px;margin:0">Direction : partout. Le retour n'est pas garanti du premier coup.</p>
+        </div>
+      </div>
+      <figure class="visite-photo">
+        <img src="labo-chocolat.png" alt="Le laboratoire de chocolat de l'usine Wonka" width="1122" height="1402">
+        <figcaption>Le laboratoire chocolat</figcaption>
+      </figure>
+    </div>
+
+    <div class="panel vert reveal faq">
+      <h2 class="titre">Questions fréquentes</h2>
+      <p class="sous-titre">Extrait. La liste complète (10 questions) est sur la page <a href="faq.html">FAQ</a>.</p>
+      <details open>
+        <summary>Peut-on visiter l'usine sans Golden Ticket ?</summary>
+        <p>Non. Absolument non. L'usine est verrouillée, et le gardien est très poli mais très ferme. Voir la page <a href="visite-usine.html">Visiter l'usine</a> pour les rares exceptions.</p>
+      </details>
+      <details>
+        <summary>Les produits contiennent-ils des noix ?</summary>
+        <p>Certains oui. La <a href="scrumdiddlyumptious-bar.html">Scrumdiddlyumptious Bar</a> contient des noix de pécan caramélisées. En cas de doute, ne goûtez pas les murs.</p>
+      </details>
+      <details>
+        <summary>Peut-on commander depuis l'étranger ?</summary>
+        <p>Oui, sauf pour la <a href="fizzy-lifting-drink.html">Fizzy Lifting Drink</a> : les boissons gazeuses qui font flotter sont interdites dans les avions, les trains et la plupart des immeubles.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="colonnes">
+    <div>
+      <h4>L'usine</h4>
+      <p>Wonka Chocolate Factory<br>14 boulevard du Cacao Fou<br>1971 Chocolatville-sur-Rivière</p>
+    </div>
+    <div>
+      <h4>Horaires</h4>
+      <p>Lundi – Vendredi : 9h – 18h<br>Samedi : 10h – 16h<br>Dimanche : fermé</p>
+    </div>
+    <div>
+      <h4>Besoin d'aide ?</h4>
+      <p><a href="faq.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Foire aux questions</a><br><a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Nous contacter</a><br><a href="mentions-legales.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Mentions légales</a><br><a href="recrutement.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Travailler à l'usine</a><br><a href="golden-ticket.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:1em;height:1em;vertical-align:-0.125em">
+  <path d="M9 6l6 6l-6 6" />
+</svg> Trouver un Golden Ticket</a></p>
+    </div>
+  </div>
+  <p class="absurde">© 1971-2026 Wonka Chocolate Factory — Tous droits réservés, y compris ceux qui n'existent pas encore. Aucun Oompa Loompa n'a été consulté pour la rédaction de ce site. Les chansons du service expédition sont comprises dans le prix.</p>
 </footer>
 
 <script>
-var citations = [
-  "Un peu de folie est ce qu'il y a de plus sage.",
-  "Le bonbon, c'est la vie !",
-  "Nous avons tellement de temps et si peu à voir... attendez, c'est l'inverse.",
-  "N'oubliez pas : ce qui brille n'est pas toujours comestible.",
-  "Le chocolat fond, mais les rêves non."
-];
+/* ============================================================
+   SCRIPT WONKA — copié depuis index.html
+   Certaines fonctions sont recopiées à l'identique ailleurs.
+   ============================================================ */
 
-function citationAleatoire() {
-  var i = Math.floor(Math.random() * citations.length);
-  document.getElementById("zone-citation").textContent = "« " + citations[i] + " »";
+/* compteur animé */
+function animerCompteurs() {
+  var nb = document.querySelectorAll('.nb');
+  for (var i = 0; i < nb.length; i++) {
+    (function (el) {
+      var cible = parseInt(el.getAttribute('data-cible'), 10);
+      var actuel = 0;
+      var pas = Math.max(1, Math.round(cible / 40));
+      var t = setInterval(function () {
+        actuel += pas;
+        if (actuel >= cible) { actuel = cible; clearInterval(t); }
+        el.innerHTML = actuel.toLocaleString('fr-FR');
+      }, 40);
+    })(nb[i]);
+  }
 }
-</script>
 
+/* tapis roulant de bonbons : on double la bande pour la boucle */
+(function () {
+  var t = document.getElementById('tapis');
+  if (t) { t.innerHTML = t.innerHTML + t.innerHTML; }
+})();
+
+/* apparition au scroll */
+(function () {
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { return; }
+  var io = new IntersectionObserver(function (entrees) {
+    entrees.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('vu'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  for (var i = 0; i < els.length; i++) { io.observe(els[i]); }
+})();
+
+window.addEventListener('load', function () { animerCompteurs(); });
+</script>
 </body>
 </html>

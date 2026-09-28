@@ -1,0 +1,5 @@
+FallbackResource /static2frameworkv0.1/app/index.php
+
+<Files ".env">
+    Require all denied
+</Files>

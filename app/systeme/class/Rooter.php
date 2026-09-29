@@ -2,10 +2,11 @@
 class Rooter
 {
     private static function erreur(int $code): void
-{
-    http_response_code($code);
-    require PATH_APP . '/pages/erreur.php';
-}
+    {
+        http_response_code($code);
+        require PATH_APP . '/pages/erreur.php';
+    }
+    
     public function Run(): void
     {
         $url = $_GET['url'] ?? '/';

@@ -54,3 +54,67 @@ footer.site .colonnes{display:grid;gap:24px;grid-template-columns:repeat(auto-fi
 footer.site h4{color:#ffd166;font-size:18px;margin:0 0 8px}
 footer.site a{color:#8ad7f2}
 footer.site .absurde{max-width:1100px;margin:22px auto 0;font-size:12px;font-style:italic;color:#d8b6ea;border-top:2px dotted #8a35a8;padding-top:12px}
+
+
+/* ===== Page d'erreur (404 / 500) ===== */
+
+.erreur {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    color: #000;
+}
+
+/* Le code, en énorme */
+.erreur__code {
+    margin: 0;
+    font-size: clamp(8rem, 30vw, 20rem);
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.05em;
+}
+
+.erreur__code span {
+    display: inline-block;
+}
+
+/* Le chiffre du milieu bascule comme s'il allait tomber */
+.erreur__code span:nth-child(2) {
+    transform-origin: bottom right;
+    animation: bascule 3s ease-in-out infinite;
+}
+
+@keyframes bascule {
+    0%, 60%, 100% { transform: rotate(0); }
+    70%           { transform: rotate(18deg); }
+    80%           { transform: rotate(-8deg); }
+    90%           { transform: rotate(4deg); }
+}
+
+.erreur__message {
+    max-width: 30ch;
+    margin: 1rem 0 2.5rem;
+    font-size: 1.5rem;
+}
+
+/* Bouton ombre */
+.erreur__lien {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border: 3px solid #000;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 6px 6px 0 #000;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.erreur__lien:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0 #000;
+}

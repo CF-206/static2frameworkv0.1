@@ -1,16 +1,56 @@
 <?php
+$erreurs = [];
+$envoye  = false;
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $validator = new Validator($_POST);
+
     $valide = $validator->validate([
         'nom'     => ['required'],
-        'email' => ['required', 'email'],
+        'email'   => ['required', 'email'],
         'message' => ['required'],
     ]);
-    var_dump($valide, $validator->getErrors());
+
+    if ($valide) {
+        $donnees = $validator->getData();
+        $fichier = PATH_APP . '/data/contact.json';
+
+        // 1. Lire les messages déjà enregistrés
+        $messages = is_file($fichier)
+            ? json_decode(file_get_contents($fichier), true) ?? []
+            : [];
+
+        // 2. Ajouter le nouveau message à la fin
+        $messages[] = [
+            'nom'     => $donnees['nom'],
+            'email'   => $donnees['email'],
+            'message' => $donnees['message'],
+            'date'    => date('Y-m-d H:i:s'),
+        ];
+
+        // 3. Réécrire tout le fichier
+        file_put_contents(
+            $fichier,
+            json_encode($messages, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE),
+            LOCK_EX
+        );
+
+        $envoye = true;
+    } else {
+        $erreurs = $validator->getErrors();
+    }
 }
 ?>
 
 <h1>Contact</h1>
+
+<?php if ($envoye): ?>
+    <p>Merci, votre message a bien été envoyé.</p>
+<?php endif; ?>
+
+<?php foreach ($erreurs as $message): ?>
+    <p><?= htmlspecialchars($message) ?></p>
+<?php endforeach; ?>
 
 <form method="post">
     <input type="text" name="nom" placeholder="Nom">

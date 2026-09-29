@@ -1,0 +1,41 @@
+.chat {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.chat__bulle {
+    max-width: 80%;
+    align-self: flex-start;
+    padding: 10px 14px;
+    border: 2px solid #000;
+    border-radius: 16px 16px 16px 4px;
+    background: #fff;
+    color: #000;
+}
+
+.chat__bulle:nth-of-type(even) {
+    align-self: flex-end;
+    border-radius: 16px 16px 4px 16px;
+    background: #000;
+    color: #fff;
+}
+
+.chat__auteur {
+    margin: 0 0 4px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.chat__auteur span {
+    margin-left: 6px;
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.chat__texte {
+    margin: 0;
+}

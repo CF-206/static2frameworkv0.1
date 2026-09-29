@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($valide) {
         $donnees = $validator->getData();
-        $fichier = PATH_APP . '/data/contact_messages.json';
+        $fichier = PATH_APP . '/data/contact_message.json';
 
         // 1. Lire les messages déjà enregistrés
         $messages = is_file($fichier)

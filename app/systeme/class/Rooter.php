@@ -40,14 +40,16 @@ class Rooter
                 continue;
             }
 
-            $page = PATH_APP . '/pages/' . ltrim($route['page'] ?? '', '/\\');
+            $pageFile = $route['page'] ?? '';
+            $pageName = basename((string) $pageFile, '.php');
+            $pageName = trim($pageName, "/\\");
 
-            if (!is_file($page)) {
+            if ($pageName === '' || !is_file(PATH_APP . '/pages/' . $pageName . '.php')) {
                 self::erreur(500);
                 return;
             }
 
-            require $page;
+            (new Page($pageName, $params))->render();
             return;
         }
 

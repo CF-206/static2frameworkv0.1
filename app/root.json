@@ -1,16 +1,12 @@
 {
     "routes": {
-        "get":[
-            {
-                "url":"/",
-                "page":"homepage.php"
-            }
+        "get": [
+            { "url": "/", "page": "homepage.php" },
+            { "url": "/contact", "page": "contact.php" }
         ],
-        "post":[
-            {
-                "url":"/",
-                "page":"homepage.php"
-            }
+        "post": [
+            { "url": "/", "page": "homepage.php" },
+            { "url": "/contact", "page": "contact.php" }
         ]
     }
 }

@@ -1,0 +1,56 @@
+/* FEUILLE DE STYLE GLOBALE WONKA — chargee sur toutes les pages
+   via autoload_styles() (premier link, avant les CSS de page/composants).
+   Extrait du style inline qui se trouvait dans templates/partials/head.php. */
+/* FEUILLE DE STYLE WONKA */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:#3b1a2b;font-family:Verdana,"Trebuchet MS",Tahoma,sans-serif;font-size:15px;line-height:1.65;
+  background-color:#ffe8f0;
+  background-image:radial-gradient(#ffd166 2px,transparent 3px),radial-gradient(#8ad7f2 2px,transparent 3px),repeating-linear-gradient(135deg,#ffd9ec 0 24px,#ffeaf6 24px 48px);
+  background-size:60px 60px,60px 60px,auto;background-position:0 0,30px 30px,0 0;background-attachment:fixed}
+h1,h2,h3,h4,.logo,.btn,.badge{font-family:"Cooper Black","Bookman Old Style",Rockwell,Georgia,serif;font-weight:400;letter-spacing:.3px}
+a{color:#a3256b}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+.topbar{overflow:hidden;background:#d7255c;color:#fff6e5;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+.topbar .bande{display:inline-block;white-space:nowrap;padding:7px 0;animation:defile 26s linear infinite}
+@keyframes defile{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+header.site{background:linear-gradient(180deg,#4a1163,#31093f);border-bottom:3px solid #ffd166;padding:0;position:relative}
+header.site:before{content:"";display:block;height:6px;background:repeating-linear-gradient(90deg,#ff5d8f 0 26px,#ffd166 26px 52px,#41e0a3 52px 78px,#8ad7f2 78px 104px)}
+.logo{margin:0}
+.logo img{position:relative;z-index:5;display:block;width:auto;height:80px;margin-bottom:-36px}
+@media(max-width:1020px){.logo img{height:70px;margin-bottom:-30px}}
+@media(max-width:920px){.logo img{height:58px;margin-bottom:-24px}}
+header.site .wrap{max-width:1100px;display:flex;align-items:center;flex-wrap:wrap;gap:14px;min-height:66px}
+.menu-toggle{position:absolute;width:1px;height:1px;opacity:0}
+.burger{display:none;margin-left:auto;color:#ffd166;font-size:24px;line-height:1;cursor:pointer;padding:10px 2px;user-select:none}
+nav.main{display:flex;align-items:center;gap:4px;margin-left:auto}
+@media(max-width:920px){.burger{display:inline-flex}nav.main{display:none;flex-direction:column;align-items:stretch;gap:2px;width:100%;margin:0;padding:28px 0 14px}nav.main a{padding:12px 16px;border-radius:12px}.menu-toggle:checked~nav.main{display:flex}}
+nav.main a{color:#efe1fb;text-decoration:none;font-weight:bold;font-size:clamp(9.5px,.92vw,11.5px);text-transform:uppercase;letter-spacing:.4px;padding:.65em .95em;border-radius:999px;white-space:nowrap;transition:background .15s,color .15s}
+nav.main a:hover{background:rgba(255,209,102,.16);color:#ffd166}
+nav.main a[aria-current=page]{background:#1e0530;color:#fff6e5;box-shadow:inset 0 0 0 2px #8a35a8}
+.logo a{display:block;line-height:0}
+.btn{display:inline-block;text-decoration:none;border:4px solid #3a0f52;border-radius:14px;padding:12px 22px;font-size:16px;cursor:pointer;box-shadow:6px 6px 0 #3a0f52;transition:transform .12s,box-shadow .12s;background:#ffd166;color:#3a0f52;text-align:center}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 #3a0f52}
+.btn:active{transform:translate(3px,3px);box-shadow:2px 2px 0 #3a0f52}
+.btn-rose{background:#ff5d8f;color:#fff6e5}
+.btn-vert{background:#41e0a3}
+.btn-bleu{background:#8ad7f2}
+.btn-petit{font-size:13px;padding:8px 14px;box-shadow:4px 4px 0 #3a0f52;border-width:3px}
+section{padding:44px 0}
+.panel{background:#fff6e5;border:5px solid #3a0f52;border-radius:26px;box-shadow:10px 10px 0 #ff5d8f;padding:26px;margin:0 0 26px}
+.panel.vert{box-shadow:10px 10px 0 #41e0a3}
+.panel.jaune{box-shadow:10px 10px 0 #ffd166}
+.panel.bleu{box-shadow:10px 10px 0 #8ad7f2}
+.panel.violet{box-shadow:10px 10px 0 #b07bd8}
+.titre{font-size:clamp(26px,4.6vw,44px);margin:0 0 8px;color:#3a0f52;text-shadow:3px 3px 0 #ffd166}
+.sous-titre{font-size:15px;margin:0 0 22px;color:#7a3b5c}
+hr.bonbon{border:0;height:8px;background:repeating-linear-gradient(90deg,#ff5d8f 0 16px,#ffd166 16px 32px,#41e0a3 32px 48px,#8ad7f2 48px 64px);border-radius:8px;margin:22px 0}
+.badge{display:inline-block;background:#ff5d8f;color:#fff6e5;border:3px solid #3a0f52;border-radius:999px;padding:3px 11px;font-size:11px;text-transform:uppercase;letter-spacing:1px;box-shadow:3px 3px 0 #3a0f52}
+.badge.vert{background:#41e0a3;color:#123a2c}
+.badge.jaune{background:#ffd166;color:#5a3a00}
+.badge.bleu{background:#8ad7f2;color:#0b3d4d}
+footer.site{background:#3a0f52;color:#ffe8f0;border-top:7px solid #ffd166;padding:34px 16px 20px;margin-top:40px}
+footer.site .colonnes{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));max-width:1100px;margin:0 auto}
+footer.site h4{color:#ffd166;font-size:18px;margin:0 0 8px}
+footer.site a{color:#8ad7f2}
+footer.site .absurde{max-width:1100px;margin:22px auto 0;font-size:12px;font-style:italic;color:#d8b6ea;border-top:2px dotted #8a35a8;padding-top:12px}

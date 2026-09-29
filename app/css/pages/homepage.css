@@ -1,0 +1,15 @@
+/* Styles specifiques a la page homepage.
+   Charge automatiquement via le bloc "styles" de pages/json/homepage.json
+   et l appel autoload_styles() dans templates/partials/head.php.
+   Convention : un fichier css/pages/{page}.css par page,
+   un fichier css/components/{composant}.css par composant. */
+.page-homepage {
+    padding-top: 8px;
+}
+.page-homepage .titre {
+    text-wrap: balance;
+}
+
+.titre{
+    color: orange;
+}

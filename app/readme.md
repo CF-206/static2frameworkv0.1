@@ -25,31 +25,41 @@
 ## Structure
 
 ```
-app/
-├─ index.php              point d'entrée unique, toutes les URL passent par lui
-├─ .htaccess              redirige les URL vers index.php, protège le .env
-├─ root.json              liste des routes (URL → page)
-├─ .env / .env.example    variables d'environnement (le .env n'est pas versionné)
-├─ systeme/
-│  ├─ Autoload.php        constantes (chemins, BASE_URL), chargement des classes, chargement des CSS
-│  └─ class/
-│     ├─ Rooter.php       lit l'URL, trouve la route, affiche la page ou une erreur 404/500
-│     ├─ Page.php         charge le JSON de la page et assemble head + header + page + footer
-│     ├─ Validator.php    vérifie les données des formulaires
-│     └─ Env.php          lecture du .env
-├─ templates/partials/    head.php, header.php, footer.php, communs à toutes les pages
-├─ pages/
-│  ├─ homepage.php        contenu de chaque page (sans head, header ni footer)
-│  ├─ contact.php
-│  ├─ erreur.php          page 404 / 500
-│  └─ json/               contenu et réglages de chaque page (textes, meta, CSS)
-├─ css/
-│  ├─ global.css          style commun, chargé sur toutes les pages
-│  └─ pages/              un fichier CSS par page
-├─ js/                    scripts
-├─ sources/               images
-└─ data/                  données écrites par le site (messages de contact), bloqué depuis le navigateur
-tmp/                      ancien site, pour comparer le rendu
+static2frameworkv0.1/
+├─ app/
+│  ├─ index.php              point d'entrée unique, toutes les URL passent par lui
+│  ├─ .htaccess              redirige les URL vers index.php, protège le .env
+│  ├─ root.json              liste des routes (URL → page)
+│  ├─ .env / .env.example    variables d'environnement (le .env n'est pas versionné)
+│  ├─ .gitignore
+│  ├─ readme.md
+│  ├─ systeme/
+│  │  ├─ Autoload.php        constantes (chemins, BASE_URL), chargement des classes, chargement des CSS
+│  │  └─ class/
+│  │     ├─ Rooter.php       lit l'URL, trouve la route, affiche la page ou une erreur 404/500
+│  │     ├─ Page.php         charge le JSON de la page et assemble head + header + page + footer
+│  │     ├─ Validator.php    vérifie les données des formulaires
+│  │     └─ Env.php          lecture du .env (pas encore implémentée)
+│  ├─ templates/
+│  │  └─ partials/           head.php, header.php, footer.php, communs à toutes les pages
+│  ├─ pages/
+│  │  ├─ homepage.php        contenu de chaque page (sans head, header ni footer)
+│  │  ├─ contact.php         formulaire de contact
+│  │  ├─ message.php         affichage des messages reçus
+│  │  ├─ erreur.php          page 404 / 500
+│  │  └─ json/               contenu et réglages de chaque page (textes, meta, CSS)
+│  │     ├─ homepage.json
+│  │     ├─ contact.json
+│  │     └─ message.json
+│  ├─ css/
+│  │  ├─ global.css          style commun, chargé sur toutes les pages
+│  │  └─ pages/              un fichier CSS par page (homepage, contact, message)
+│  ├─ js/                    scripts
+│  ├─ sources/               images
+│  └─ data/                  données écrites par le site, bloqué depuis le navigateur
+│     ├─ .htaccess
+│     └─ contact_message.json  messages envoyés depuis le formulaire de contact
+└─ tmp/                      ancien site, pour comparer le rendu
 ```
 
 ## Comment une page s'affiche
@@ -140,7 +150,7 @@ Après un envoi réussi, la page redirige (`/contact?envoye=1`) pour éviter qu'
 ## Sécurité
 
 - Le `.env` n'est pas versionné et n'est pas accessible depuis le navigateur.
-- Le dossier `data/` est bloqué par son propre `.htaccess` et `data/contact.json` n'est pas versionné.
+- Le dossier `data/` est bloqué par son propre `.htaccess` et `data/contact_message.json` n'est pas versionné.
 - Les textes affichés passent par `htmlspecialchars` (`$page->e()`).
 - Les données des formulaires sont stockées brutes et échappées seulement à l'affichage.
 

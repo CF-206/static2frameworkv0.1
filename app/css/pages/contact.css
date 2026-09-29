@@ -1,0 +1,62 @@
+/* ===== Page contact ===== */
+
+.contact {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+/* Les champs les uns sous les autres, espacés */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact__form input,
+.contact__form textarea {
+    padding: 10px 12px;
+    border: 2px solid #000;
+    background: #fff;
+    font: inherit;
+}
+
+.contact__form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Champ actif : petite ombre décalée, comme le bouton de la 404 */
+.contact__form input:focus,
+.contact__form textarea:focus {
+    outline: none;
+    box-shadow: 4px 4px 0 #000;
+}
+
+.contact__form button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact__form button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Messages */
+.contact__succes {
+    padding: 10px 12px;
+    border: 2px solid #000;
+    background: #fff;
+}
+
+.contact__erreur {
+    margin: 0 0 8px;
+    font-weight: 700;
+}

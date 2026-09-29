@@ -1,6 +1,6 @@
 <?php
 $erreurs = [];
-$envoye  = false;
+$envoye = isset($_GET['envoye']);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $validator = new Validator($_POST);
@@ -13,7 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($valide) {
         $donnees = $validator->getData();
-        $fichier = PATH_APP . '/data/contact.json';
+        $fichier = PATH_APP . '/data/contact_messages.json';
 
         // 1. Lire les messages déjà enregistrés
         $messages = is_file($fichier)
@@ -35,26 +35,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             LOCK_EX
         );
 
-        $envoye = true;
+        header('Location: ' . BASE_URL . '/contact?envoye=1');
+        exit;
     } else {
         $erreurs = $validator->getErrors();
     }
 }
 ?>
 
-<h1>Contact</h1>
+<section class="contact">
+    <h1>Contact</h1>
 
-<?php if ($envoye): ?>
-    <p>Merci, votre message a bien été envoyé.</p>
-<?php endif; ?>
+    <?php if ($envoye): ?>
+        <p class="contact__succes">Merci, votre message a bien été envoyé.</p>
+    <?php endif; ?>
 
-<?php foreach ($erreurs as $message): ?>
-    <p><?= htmlspecialchars($message) ?></p>
-<?php endforeach; ?>
+    <?php foreach ($erreurs as $message): ?>
+        <p class="contact__erreur"><?= htmlspecialchars($message) ?></p>
+    <?php endforeach; ?>
 
-<form method="post">
-    <input type="text" name="nom" placeholder="Nom">
-    <input type="text" name="email" placeholder="Email">
-    <textarea name="message" placeholder="Message"></textarea>
-    <button type="submit" name="submit">Envoyer</button>
-</form>
+    <form class="contact__form" method="post">
+        <input type="text" name="nom" placeholder="Nom">
+        <input type="text" name="email" placeholder="Email">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" name="submit">Envoyer</button>
+    </form>
+</section>

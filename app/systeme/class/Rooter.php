@@ -1,6 +1,11 @@
 <?php
 class Rooter
 {
+    private static function erreur(int $code): void
+{
+    http_response_code($code);
+    require PATH_APP . '/pages/erreur.php';
+}
     public function Run(): void
     {
         $url = $_GET['url'] ?? '/';
@@ -37,7 +42,7 @@ class Rooter
             $page = PATH_APP . '/pages/' . ltrim($route['page'] ?? '', '/\\');
 
             if (!is_file($page)) {
-                http_response_code(500);
+                self::erreur(500);
                 return;
             }
 
@@ -45,6 +50,6 @@ class Rooter
             return;
         }
 
-        http_response_code(404);
+        self::erreur(404);
     }
 }

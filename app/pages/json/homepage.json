@@ -1,0 +1,14 @@
+{
+    "titre": "Bienvenue à la Wonka Chocolate Factory",
+    "sous_titre": "La chocolaterie la plus étrange du monde.",
+    "description": "Découvrez nos produits, visitez l'usine et trouvez un Golden Ticket.",
+    "meta": {
+        "title": "Wonka Chocolate Factory - Accueil officiel de la chocolaterie",
+        "description": "Bienvenue à la Wonka Chocolate Factory : chocolats, confiseries expérimentales et cinq Golden Tickets cachés chaque année.",
+        "author": "Service communication Wonka"
+    },
+    "styles": {
+        "page": "homepage",
+        "components": []
+    }
+}
